@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased`}
         id="body"
       >
-        <main>
+        <main className="overflow-x-hidden">
           <Cursor />
           <Bannner />
           <Navbar />
