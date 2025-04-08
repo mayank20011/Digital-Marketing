@@ -21,11 +21,11 @@ export default function Home() {
             Contact Us
           </Link>
         </div>
-        <div className="md:w-1/2 aspect-16/9 overflow-hidden">
+        <div className="md:w-1/2 aspect-square overflow-hidden flex items-center">
           <img
             src="/digitalMarketing.webp"
             alt="Digital Marketing"
-            className="h-full w-full translate-x-[60px] opacity-0 heroAnimationImg"
+            className="w-full translate-x-[60px] opacity-0 heroAnimationImg"
           />
         </div>
       </div>
