@@ -19,7 +19,7 @@ const Cursor = () => {
 
   return (
     <div
-      className="bg-white shadow-lg shadow-black w-[20px] h-[20px] rounded-full absolute translate-x-[20px] translate-y-[80px] z-10"
+      className="bg-white shadow-lg shadow-black w-[20px] h-[20px] rounded-full fixed translate-x-[20px] translate-y-[80px] z-10"
       ref={cursorBall}
     ></div>
   );

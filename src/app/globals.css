@@ -2,12 +2,21 @@
 
 @layer components {
   .custom-container {
-   @apply container max-w-[1440px] mx-auto w-4/5; 
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
   }
+
 }
+
+/* *{
+  border:1px solid green;
+} */
 
 body{
-  overflow-x: hidden;
   font-family: var(--font-inter), sans-serif;
+  overflow-x:hidden;
+  scrollbar-width: thin;
+  scrollbar-color: black white;
 }
-

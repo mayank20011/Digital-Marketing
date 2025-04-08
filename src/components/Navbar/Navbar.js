@@ -5,8 +5,8 @@ import NavbarAnimation from "./NavbarAnimation";
 export default async function Navbar() {
   return (
     <>
-      <nav className="bg-white py-2">
-        <div className="custom-container flex md:justify-between gap-2 overflow-x-hidden">
+      <nav className="bg-white py-2 overflow-hidden">
+        <div className="custom-container flex md:justify-between gap-2 overflow-hidden">
           
           <div className="grow md:grow-0">
             <Link href="/">
@@ -18,7 +18,7 @@ export default async function Navbar() {
             </Link>
           </div>
 
-          <div className="md:flex gap-6 items-center font-bold hidden ">
+          <div className="md:flex gap-6 items-center font-bold hidden overflow-hidden">
             <ActiveLink href={"/"}>Home</ActiveLink>
             <ActiveLink href={"/about-us"}>About Us</ActiveLink>
             <ActiveLink href={"/contact-us"}>Contact Us</ActiveLink>
