@@ -21,7 +21,7 @@ export default function Home() {
             Contact Us
           </Link>
         </div>
-        <div className="md:w-1/2 aspect-16/9">
+        <div className="md:w-1/2 aspect-16/9 overflow-hidden">
           <img
             src="/digitalMarketing.webp"
             alt="Digital Marketing"
