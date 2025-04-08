@@ -40,7 +40,7 @@ export default async function Navbar() {
             className="w-[40px] h-[40px] self-center md:hidden openNav"
           />
 
-          <div className="absolute max-w-[400px] w-4/5 sm:w-1/2 p-6 bg-white top-0 right-0 min-h-screen opacity-95 flex flex-col gap-6 md:hidden translate-x-full mobileNav z-50 overflow-x-hidden">
+          <div className="fixed max-w-[400px] w-4/5 sm:w-1/2 p-6 bg-white top-0 right-0 min-h-screen opacity-95 flex flex-col gap-6 md:hidden translate-x-full mobileNav z-50 overflow-x-hidden">
             <img
               src="/close.png"
               alt="X Logo"
