@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <div className="custom-container py-6 sm:oy-12 md:py-24 gap-6 flex items-center flex-col md:flex-row">
         <div className="order-2 md:order-1 md:w-1/2 flex flex-col gap-6 2xl:gap-12">
-          <h1 className="text-3xl sm:text-4xl xl:text-6xl font-bold heroAnimation translate-y-[100px] opacity-0">
+          <h1 className="text-2xl sm:text-4xl xl:text-6xl font-bold heroAnimation translate-y-[100px] opacity-0">
             Grow Your Brand with Smart Digital Marketing
           </h1>
           <p className="text-sm sm:text-md xl:text-2xl heroAnimation translate-y-[100px] opacity-0">
@@ -25,7 +25,7 @@ export default function Home() {
           <img
             src="/digitalMarketing.webp"
             alt="Digital Marketing"
-            className="w-full translate-x-[60px] opacity-0 heroAnimationImg"
+            className="w-full translate-x-[60px] opacity-0 heroAnimationImg "
           />
         </div>
       </div>
