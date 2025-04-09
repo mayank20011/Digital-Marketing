@@ -77,3 +77,61 @@ export const WhyWeAreBetterData = {
     },
   ],
 };
+
+export const HowItWorksData={
+  heading:"How IT Work",
+  pera:"Our Step-by-Step Marketing Process",
+  cards:[
+    {
+      src:"/megaphone.png",
+      alt:"Microphone",
+      number:"01.",
+      pera:"Competitor analysis and keyword research",
+    },
+    {
+      src:"/rocket.png",
+      alt:"Rocket",
+      number:"02.",
+      pera:"Craft a tailored SEO and digital plan",
+    },
+    {
+      src:"/bulb.png",
+      alt:"Bulb",
+      number:"03.",
+      pera:"Optimize your website for search engines",
+    },
+    {
+      src:"/connection.png",
+      alt:"Triangle",
+      number:"04.",
+      pera:"Focus on long-term success & sustainable growth",
+    }
+  ],
+  about:{
+    src:"/howItWorksGirl.png",
+    alt:"Girl Sitting With Laptop",
+    heading:"Driving Growth with Our Expertise and Passion",
+    pera:"At the core of our journey lies a commitment to driving growth fueled by a combination of expertise and passion. We believe growth is not just about numbers—it's about creating meaningful impact, fostering innovation, and building relationships that last. Our team brings a wealth of knowledge, experience, and dedication to every project.",
+    girlCard:{
+      heading:"",
+      pera:""
+    },
+    cardl:{
+      "heading":"Need Custom?",
+      pera:"We completed 85% success project in business",
+
+    },
+    cardR:{
+      points:[
+        "Marketing professional",
+        "Help businesses increase",
+        "Latest technologies",
+        "Measurable results"
+      ],
+      button:{
+         
+      }
+    }
+  }
+
+}
