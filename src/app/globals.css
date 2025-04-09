@@ -19,4 +19,5 @@ body{
   overflow-x:hidden;
   scrollbar-width: thin;
   scrollbar-color: black white;
+  user-select: none;
 }
