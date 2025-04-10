@@ -8,7 +8,7 @@ import HowItWorks from "@/components/Home/HowItWorks";
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col gap-12 md:gap-24 ">
+      <div className="flex flex-col gap-12 md:gap-24">
         <HeroSection />
         <WhatWeDo/>
         <HowItWorks/>

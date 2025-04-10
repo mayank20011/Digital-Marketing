@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function HowItWorks() {
   return (
     <>
-      <div className="custom-container flex flex-col gap-16">
+      <div className="custom-container flex flex-col gap-12">
         <h1 className="text-4xl text-center font-bold">
           {HowItWorksData.heading}
         </h1>
