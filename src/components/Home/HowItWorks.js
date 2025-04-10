@@ -33,7 +33,7 @@ export default function HowItWorks() {
           ))}
         </div>
         <div className="flex gap-12 items-center flex-col lg:flex-row">
-          <div className="w-2/5 aspect-[16/9]">
+          <div className="w-4/5 sm:w-2/5 aspect-[16/9]">
             <img
               src={HowItWorksData.about.src}
               alt={HowItWorksData.about.alt}
@@ -75,6 +75,58 @@ export default function HowItWorks() {
                     <p>{data}</p>
                   </span>
                 ))}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex gap-12 items-center justify-center flex-col lg:flex-row">
+          <div className="w-full flex flex-col gap-6 lg:w-3/5">
+            <h1 className="text-3xl font-bold">
+              {HowItWorksData.strategy.left.heading}
+            </h1>
+            <p className="text-lg text-neutral-500">
+              {HowItWorksData.strategy.left.pera}
+            </p>
+            <div className="flex flex-col gap-6">
+              {HowItWorksData.strategy.left.points.map((data) => (
+                <span className="flex gap-4" key={data}>
+                  <div className="h-[24px] self-center">
+                    <Image
+                      src="/arrowUpRight.png"
+                      alt="arrow top right"
+                      width={24}
+                      height={24}
+                    />
+                  </div>
+                  <p>{data}</p>
+                </span>
+              ))}
+            </div>
+            <Link
+              href="/about-us"
+              className="px-4 py-2 rounded-2xl text-white bg-orange-300 w-fit "
+            >
+              Know More
+            </Link>
+          </div>
+          <div className="w-full lg:w-2/5 bg-orange-300 rounded-2xl opacity-90 flex flex-col pb-6">
+            <div className="w-3/5 mx-auto -translate-y-1/5 rocketDiv">
+              <Image
+                src={HowItWorksData.strategy.right.img.src}
+                alt={HowItWorksData.strategy.right.img.alt}
+                className="w-full"
+                width={300}
+                height={300}
+              />
+            </div>
+            <div className="px-4 gap-4 flex flex-col sm:flex-row w-full">
+              <div className="w-full bg-white p-4 sm:w-1/2 rounded-xl flex flex-col gap-4">
+               <h1 className="text-center text-lg font-bold">Current Clients</h1>
+                <p className="text-2xl sm:text-4xl md:text-5xl items-center text-center flex mx-auto">300<span className="text-4xl text-orange-600">+</span></p>
+              </div>
+              <div className="w-full bg-white p-4 sm:w-1/2 rounded-xl flex flex-col gap-4">
+               <h1 className="text-lg font-bold text-center">On Time Delivery</h1> 
+               <p className="text-2xl sm:text-4xl md:text-5xl items-center text-center flex mx-auto">95<span className="text-4xl text-orange-600">%</span></p>
               </div>
             </div>
           </div>

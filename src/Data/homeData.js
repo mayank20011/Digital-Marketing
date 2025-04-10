@@ -33,26 +33,26 @@ export const whatWeDo = [
     pera: "Your website is your digital storefront. We design clean, responsive, and fast-loading sites that convert visitors into customers.",
     bg: "white",
   },
-  {
-    heading: "Content Marketing",
-    pera: "Content that connects. We craft blogs, social posts, and SEO-rich articles that speak your brand's voice and drive engagement.",
-    bg: "white",
-  },
-  {
-    heading: "Brand Strategy & Identity",
-    pera: "We help define your brand’s positioning, tone, and visual identity—ensuring consistency across every customer touchpoint.",
-    bg: "black",
-  },
-  {
-    heading: "Email Marketing & Automation",
-    pera: "Nurture leads and boost retention with targeted, automated email campaigns built to convert.",
-    bg: "black",
-  },
-  {
-    heading: "Analytics & Reporting",
-    pera: "We don’t just run campaigns—we measure, optimize, and report everything so you know exactly what’s working.",
-    bg: "white",
-  },
+  // {
+  //   heading: "Content Marketing",
+  //   pera: "Content that connects. We craft blogs, social posts, and SEO-rich articles that speak your brand's voice and drive engagement.",
+  //   bg: "white",
+  // },
+  // {
+  //   heading: "Brand Strategy & Identity",
+  //   pera: "We help define your brand’s positioning, tone, and visual identity—ensuring consistency across every customer touchpoint.",
+  //   bg: "black",
+  // },
+  // {
+  //   heading: "Email Marketing & Automation",
+  //   pera: "Nurture leads and boost retention with targeted, automated email campaigns built to convert.",
+  //   bg: "black",
+  // },
+  // {
+  //   heading: "Analytics & Reporting",
+  //   pera: "We don’t just run campaigns—we measure, optimize, and report everything so you know exactly what’s working.",
+  //   bg: "white",
+  // },
 ];
 
 export const WhyWeAreBetterData = {
@@ -78,60 +78,72 @@ export const WhyWeAreBetterData = {
   ],
 };
 
-export const HowItWorksData={
-  heading:"How IT Work",
-  pera:"Our Step-by-Step Marketing Process",
-  cards:[
+export const HowItWorksData = {
+  heading: "How IT Work",
+  pera: "Our Step-by-Step Marketing Process",
+  cards: [
     {
-      src:"/megaphone.png",
-      alt:"Microphone",
-      number:"01.",
-      pera:"Competitor analysis and keyword research",
+      src: "/megaphone.png",
+      alt: "Microphone",
+      number: "01.",
+      pera: "Competitor analysis and keyword research",
     },
     {
-      src:"/rocket.png",
-      alt:"Rocket",
-      number:"02.",
-      pera:"Craft a tailored SEO and digital plan",
+      src: "/rocket.png",
+      alt: "Rocket",
+      number: "02.",
+      pera: "Craft a tailored SEO and digital plan",
     },
     {
-      src:"/bulb.png",
-      alt:"Bulb",
-      number:"03.",
-      pera:"Optimize your website for search engines",
+      src: "/bulb.png",
+      alt: "Bulb",
+      number: "03.",
+      pera: "Optimize your website for search engines",
     },
     {
-      src:"/connection.png",
-      alt:"Triangle",
-      number:"04.",
-      pera:"Focus on long-term success & sustainable growth",
-    }
+      src: "/connection.png",
+      alt: "Triangle",
+      number: "04.",
+      pera: "Focus on long-term success & sustainable growth",
+    },
   ],
-  about:{
-    src:"/howItWorksGirl.png",
-    alt:"Girl Sitting With Laptop",
-    heading:"Driving Growth with Our Expertise and Passion",
-    pera:"At the core of our journey lies a commitment to driving growth fueled by a combination of expertise and passion. We believe growth is not just about numbers—it's about creating meaningful impact, fostering innovation, and building relationships that last. Our team brings a wealth of knowledge, experience, and dedication to every project.",
-    girlCard:{
-      heading:"",
-      pera:""
+  about: {
+    src: "/howItWorksGirl.png",
+    alt: "Girl Sitting With Laptop",
+    heading: "Driving Growth with Our Expertise and Passion",
+    pera: "At the core of our journey lies a commitment to driving growth fueled by a combination of expertise and passion. We believe growth is not just about numbers—it's about creating meaningful impact, fostering innovation, and building relationships that last. Our team brings a wealth of knowledge, experience, and dedication to every project.",
+    girlCard: {
+      heading: "",
+      pera: "",
     },
-    cardl:{
-      "heading":"Need Custom?",
-      pera:"We completed 85% success project in business",
-
+    cardl: {
+      heading: "Need Custom?",
+      pera: "We completed 85% success project in business",
     },
-    cardR:{
-      points:[
+    cardR: {
+      points: [
         "Marketing professional",
         "Help businesses increase",
         "Latest technologies",
-        "Measurable results"
+        "Measurable results",
       ],
-      button:{
-         
-      }
-    }
-  }
-
-}
+    },
+  },
+  strategy: {
+    left: {
+      heading: "Strategic Marketing Tailored for Time and Your Growth",
+      pera: "Time is valuable, and growth is essential. That's why our strategic marketing approach is crafted to fit your unique needs, allowing you to focus on what truly matters while we handle the rest. We understand that every business is different drive measurable results.",
+      points: [
+        "Research to understand your business, competitors, and target audience",
+        "Unique strategy tailored to your specific business goals and industry",
+        "Track performance and continuously optimize campaigns",
+      ],
+    },
+    right: {
+      img:{
+        src:"/manWithRocket.png",
+        alt:"Man With Rocket",
+      },
+    },
+  },
+};

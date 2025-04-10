@@ -20,6 +20,13 @@ const HowItWorksAnimation = () => {
         })
       })
     })
+    const rocketDiv= document.querySelector(".rocketDiv");
+    const rocketTl= gsap.timeline({repeat:-1, yoyo:true});
+    rocketTl.to(rocketDiv,{
+      y:-50,
+      duration:1.3,
+      ease:"bounce.out"
+    })
   })
   return null;
 }
