@@ -65,7 +65,7 @@ export default function HowItWorks() {
               </div>
               <div className="flex flex-col gap-2 p-4 w-full sm:w-1/2 items-center justify-center text-md sm:text-md ">
                 {HowItWorksData.about.cardR.points.map((data) => (
-                  <span className="flex gap-2">
+                  <span className="flex gap-2" key={data}>
                     <Image
                       src="/arrowUpRight.png"
                       alt="Arrow Up Right"
