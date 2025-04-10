@@ -49,7 +49,7 @@ export default function HowItWorks() {
               {HowItWorksData.about.pera}
             </p>
             <div className="border p-4 rounded-2xl border-slate-200 flex flex-col sm:flex-row">
-              <div className="p-4 flex flex-col text-center gap-4 bg-slate-100 rounded-xl w-full sm:w-1/2">
+              <div className="p-4 flex flex-col sm:text-center gap-4 bg-slate-100 rounded-xl w-full sm:w-1/2">
                 <h1 className="text-xl font-bold">
                   {HowItWorksData.about.cardl.heading}
                 </h1>
@@ -57,15 +57,15 @@ export default function HowItWorks() {
                   {HowItWorksData.about.cardl.pera}
                 </p>
                 <Link
-                  className="w-fit px-6 py-2 rounded-2xl text-white mx-auto bg-orange-300 transition hover:scale-95"
+                  className="w-fit px-6 py-2 rounded-2xl text-white sm:mx-auto bg-orange-300 transition hover:scale-95"
                   href={"/contact-us"}
                 >
                   Lets Connect
                 </Link>
               </div>
-              <div className="flex flex-col gap-2 p-4 w-full sm:w-1/2 items-center justify-center text-md sm:text-md ">
+              <div className="flex flex-col gap-2 p-4 w-full sm:w-1/2 items-center justify-center text-md sm:text-md">
                 {HowItWorksData.about.cardR.points.map((data) => (
-                  <span className="flex gap-2" key={data}>
+                  <span className="flex gap-2 w-full sm:w-auto" key={data}>
                     <Image
                       src="/arrowUpRight.png"
                       alt="Arrow Up Right"
