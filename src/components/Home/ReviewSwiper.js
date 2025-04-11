@@ -45,10 +45,11 @@ export default function ReviewSwiper() {
         modules={[Pagination, Autoplay, Navigation]}
         navigation={{ nextEl: ".swiperNext", prevEl: ".swiperPrev" }}
         className="w-full border-green-600 relative"
+        wrapperClass="pb-6 flex grow"
       >
         {testimonialData.map((obj) => (
           <SwiperSlide>
-            <div className="flex w-full py-4 flex-col gap-6 pb-6">
+            <div className="flex w-full py-4 flex-col gap-6 pb-6 grow">
               <div className="self-end flex flex-row gap-2">
                 <h1 className="text-3xl">{obj.rating}</h1>
                 <Image
@@ -59,7 +60,7 @@ export default function ReviewSwiper() {
                   className="w-fit h-fit aspect-square"
                 />
               </div>
-              <p>{obj.pera}</p>
+              <p className="grow">{obj.pera}</p>
               <span className="border-1 border-slate-100"></span>
               <div className="flex gap-6 items-center">
                 <Image
@@ -77,8 +78,8 @@ export default function ReviewSwiper() {
             </div>
           </SwiperSlide>
         ))}
-        <div className="w-fit flex gap-2 absolute right-0 bottom-0 sm:bottom-[20px]">
-          <div className="swiperPrev p-4 rounded-sm bg-orange-300 hover:scale-90 cursor-pointer">
+        <div className="w-fit flex gap-2 absolute right-0 bottom-[50px] sm:bottom-[20px]">
+          <div className="swiperPrev p-1 sm:p-4 rounded-sm bg-orange-300 hover:scale-90 cursor-pointer">
             <Image
               src={"/arrowLeft.png"}
               alt={"arrow left"}
@@ -87,7 +88,7 @@ export default function ReviewSwiper() {
               className="cursor-pointer pointer-events-none group-hover:scale-90"
             />
           </div>
-          <div className="swiperNext p-4 rounded-sm bg-orange-300 hover:scale-90 cursor-pointer">
+          <div className="swiperNext p-1 sm:p-4 rounded-sm bg-orange-300 hover:scale-90 cursor-pointer">
             <Image
               src={"/arrowRight.png"}
               alt={"arrow right"}

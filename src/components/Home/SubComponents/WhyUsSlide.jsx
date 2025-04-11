@@ -27,7 +27,7 @@ const WhyUsSlide = () => {
         modules={[Pagination, Autoplay]}
         autoplay={{ delay: 2000, disableOnInteraction: true }}
         className="w-full"
-        wrapperClass="flex items-center"
+        wrapperClass="flex items-center pb-6"
       >
         <SwiperSlide>
           <div className="w-full flex items-center justify-center">
@@ -84,6 +84,7 @@ const WhyUsSlide = () => {
           height={150}
           />
          </SwiperSlide>
+         <div className="swiper-pagination bottom-[40px]"></div>
       </Swiper>
     </>
   );

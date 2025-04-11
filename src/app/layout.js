@@ -1,8 +1,9 @@
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
-import Bannner from "@/components/Banner/Banner";
-import Navbar from "@/components/Navbar/Navbar";
-import Cursor from "@/components/CustomCursor/Cursor";
+import Bannner from "@/components/Layout/Banner/Banner";
+import Navbar from "@/components/Layout/Navbar/Navbar";
+import Cursor from "@/components/Layout/CustomCursor/Cursor";
+import Footer from "@/components/Layout/Footer/Footer";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -32,10 +33,11 @@ export default function RootLayout({ children }) {
         id="body"
       >
         <main className="overflow-x-hidden">
-          {/* <Cursor /> */}
+          <Cursor />
           <Bannner />
           <Navbar />
           {children}
+          <Footer/>
         </main>
       </body>
     </html>
