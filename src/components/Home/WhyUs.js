@@ -14,7 +14,7 @@ export default function WhyUs() {
           <div className="flex flex-col lg:flex-row gap-6 md:gap-12 w-full items-center">
             <div className="flex flex-col gap-6 p-4 md:p-6 w-full xl:w-4/10 bg-black text-white rounded-2xl h-fit">
               <h1 className="text-xl text-center">
-                What Our Client's Say About Us?
+                What Do Our Clients Say About Us?
               </h1>
               <p className="text-center">
                 We understand Your brand, deliver creative solutions, and truly

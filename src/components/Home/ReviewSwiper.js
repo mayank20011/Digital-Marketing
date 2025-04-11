@@ -48,7 +48,7 @@ export default function ReviewSwiper() {
         wrapperClass="pb-6 flex grow"
       >
         {testimonialData.map((obj) => (
-          <SwiperSlide>
+          <SwiperSlide key={obj.name}>
             <div className="flex w-full py-4 flex-col gap-6 pb-6 grow">
               <div className="self-end flex flex-row gap-2">
                 <h1 className="text-3xl">{obj.rating}</h1>
