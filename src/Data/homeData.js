@@ -147,3 +147,55 @@ export const HowItWorksData = {
     },
   },
 };
+
+export const testimonialData=[
+  {
+    rating:"4.7",
+    pera:"The team genuinely understood our brand and delivered a digital strategy that actually worked. We started seeing better traffic and qualified leads in just a few weeks. It felt like working with a partner, not just an agency.",
+    img:"",
+    name:"Radhika Roy",
+    position:"E-commerce Founder"
+  },
+  {
+    rating:"5.0",
+    pera:"From ad campaigns to SEO, everything was handled with clarity, speed, and a lot of heart. They really listened to what we needed and made our marketing feel less overwhelming. Our growth has been steady since.",
+    img:"",
+    name:"Aryan Khanna",
+    position:"Startup Co-Founder"
+  },
+  {
+    rating:"4.3",
+    pera:"They helped us go from zero online visibility to ranking on Google for our core services within months. Their SEO work is honest, consistent, and actually brings in results—not just reports.",
+    img:"",
+    name:"Neha Sehgal",
+    position:"Wellness Coach"
+  },
+  {
+    rating:"4.5",
+    pera:"Very professional and easy to work with. The way they handled our brand's voice on social media was spot-on. Our Instagram and LinkedIn engagement has doubled, and it finally feels like people are noticing us.",
+    img:"",
+    name:"Kartik Singh",
+    position:"Event Agency Owner"
+  },
+  {
+    rating:"4.8",
+    pera:"What I liked most was the transparency—no fluff, no jargon. Just clean execution, thoughtful updates, and real improvements across paid ads and website conversions. Exactly what we needed.",
+    img:"",
+    name:"Priya Daas",
+    position:"SaaS Product Manager"
+  },
+  {
+    rating:"4.6",
+    pera:"We needed a marketing strategy that understood our niche audience, and they totally nailed it. Every campaign felt tailored, from the visuals to the messaging. Super creative, super efficient, and ROI-focused.",
+    img:"",
+    name:"Aman Gupta",
+    position:"Tech Entrepreneur"
+  },
+  {
+    rating:"4.9",
+    pera:"Their content and paid ads strategy gave our brand a real voice. Not only did we see a jump in traffic, but the quality of leads improved too. They made marketing feel easy and human.",
+    img:"",
+    name:"Sneha Bansal",
+    position:"Interior Design Studio Owner"
+  },
+]

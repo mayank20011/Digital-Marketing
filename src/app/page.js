@@ -10,8 +10,8 @@ export default function Home() {
     <>
       <div className="flex flex-col gap-12 md:gap-24">
         <HeroSection />
-        <WhatWeDo/>
         <HowItWorks/>
+        <WhatWeDo/>
         <WhyWeAreBetter/>
         <WhyUs />
       </div>

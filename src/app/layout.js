@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
         id="body"
       >
         <main className="overflow-x-hidden">
-          <Cursor />
+          {/* <Cursor /> */}
           <Bannner />
           <Navbar />
           {children}
