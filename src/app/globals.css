@@ -21,3 +21,10 @@ body{
   scrollbar-color: black white;
   user-select: none;
 }
+
+/* .whoAreWeBg{
+  background-image: url("./vardaanfarms/public/whoWeAreCard1Bg.svg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */

@@ -10,8 +10,8 @@ const Cursor = () => {
     const body = document.querySelector("#body");
     body.addEventListener("mousemove",(e)=>{
       gsap.to(cursorBall.current,{
-        x:e.x+10,
-        y:e.y+10,
+        x:e.x-10,
+        y:e.y-10,
         ease:"back.out"
       })
     })
@@ -19,7 +19,7 @@ const Cursor = () => {
 
   return (
     <div
-      className="bg-white shadow-lg shadow-black w-[20px] h-[20px] rounded-full fixed translate-x-[20px] translate-y-[80px]"
+      className="bg-white shadow-lg shadow-black w-[20px] h-[20px] rounded-full fixed translate-x-[20px] translate-y-[80px] z-[50]"
       ref={cursorBall}
     ></div>
   );
