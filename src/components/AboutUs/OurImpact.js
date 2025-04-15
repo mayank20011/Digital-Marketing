@@ -6,7 +6,7 @@ export default function OurImpact() {
       <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold">Our Impact Numbers</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full gap-6 md:gap-6 items-center">
         {OurImpactData.cards.map((obj, index) => (
-          <div className="flex justify-start md:justify-center">
+          <div key={obj.number} className="flex justify-start md:justify-center">
             <div className={`flex flex-col gap-2 w-fit`}>
               <Image
                 src={obj.src}
