@@ -22,7 +22,7 @@ export default async function Navbar() {
             <ActiveLink href={"/"}>Home</ActiveLink>
             <ActiveLink href={"/about-us"}>About Us</ActiveLink>
             <ActiveLink href={"/contact-us"}>Contact Us</ActiveLink>
-            <ActiveLink href={"/blogs"}>Blogs</ActiveLink>
+            {/* <ActiveLink href={"/blogs"}>Blogs</ActiveLink> */}
             <ActiveLink href={"/services"}>Services</ActiveLink>
           </div>
 
@@ -51,7 +51,7 @@ export default async function Navbar() {
             <MobileActiveLink href={"/"}>Home</MobileActiveLink>
             <MobileActiveLink href={"/about-us"}>About Us</MobileActiveLink>
             <MobileActiveLink href={"/contact-us"}>Contact Us</MobileActiveLink>
-            <MobileActiveLink href={"/blogs"} >Blogs</MobileActiveLink>
+            {/* <MobileActiveLink href={"/blogs"} >Blogs</MobileActiveLink> */}
             <MobileActiveLink href={"/services"}>Services</MobileActiveLink>
           </div>
 
