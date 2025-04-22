@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 export default function Footer() {
   return (
-    <div className="bg-neutral-700 text-white">
+    <div className="bg-neutral-700 text-white mt-12">
       <div className="custom-container py-12 flex flex-col gap-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-[2fr_1fr_1fr] 2xl:grid-cols-[2fr_1fr_1fr_1fr] gap-4 sm:gap-6 justify-between sm:grid-rows-[auto_auto_auto] xl:grid-rows-2 2xl:grid-rows-1 xl:grid-rows-auto">
           
@@ -137,31 +137,31 @@ export default function Footer() {
             <div className="grid gap-4 grid-cols-2 w-fit">
               <a
                 href=""
-                className="px-4 p-2 border rounded-2xl flex gap-2 border-orange-400 hover:border-orange-300 text-sm font-bold transition w-fit"
+                className="px-4 p-2 border rounded-2xl flex gap-1 items-center border-orange-400 hover:border-orange-300 text-sm font-bold transition w-fit"
               >
                 <Image src={"/facebookLogo.png"} alt={"Face Book Logo"} width={20} height={20} className="" />
-                <span>Facebook</span>
+                <span className="text-xs">Facebook</span>
               </a>
               <a
                 href=""
-                className="px-4 p-2 border rounded-2xl flex gap-2 border-orange-400 hover:border-orange-300 text-sm font-bold transition w-fit"
+                className="px-4 p-2 border rounded-2xl flex gap-1 items-center border-orange-400 hover:border-orange-300 text-sm font-bold transition w-fit"
               >
                 <Image src={"/twitterLogo.png"} alt={"Twitter Logo"} width={20} height={20} className="" />
-                <span>Twitter</span>
+                <span className="text-xs">Twitter</span>
               </a>
               <a
                 href=""
-                className="px-4 p-2 border rounded-2xl flex gap-2 border-orange-400 hover:border-orange-300 text-sm font-bold transition w-fit"
+                className="px-4 p-2 border rounded-2xl flex gap-1 border-orange-400 hover:border-orange-300 text-sm font-bold transition w-fit items-center"
               >
                 <Image src={"/igLogo.png"} alt={""} width={20} height={20} className="" />
-                <span>Instagram</span>
+                <span className="text-xs">Instagram</span>
               </a>
               <a
                 href=""
-                className="px-4 p-2 border rounded-2xl flex gap-2 border-orange-400 hover:border-orange-300 text-sm font-bold transition w-fit"
+                className="px-4 p-2 border rounded-2xl flex gap-1 border-orange-400 hover:border-orange-300 text-sm font-bold transition w-fit items-center"
               >
                 <Image src={"/linkedinLogo.png"} alt={""} width={20} height={20} className="" />
-                <span>Linkedin</span>
+                <span className="text-xs">Linkedin</span>
               </a>
             </div>
           </div>

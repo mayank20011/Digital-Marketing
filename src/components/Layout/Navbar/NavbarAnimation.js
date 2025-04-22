@@ -61,7 +61,8 @@ const NavbarAnimation = () => {
       })
 
     });
-  });
+  },[]);
+  return null;
 };
 
 export default NavbarAnimation;

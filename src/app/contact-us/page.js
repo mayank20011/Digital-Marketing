@@ -3,7 +3,7 @@ import ContactUsForm from "@/components/ContactUs/ContactUsForm";
 export default function BlogsPage() {
   return (
     <div className="flex flex-col gap-12">
-      <CardsContainer />
+      <CardsContainer/>
       <ContactUsForm/>
     </div>
   );
