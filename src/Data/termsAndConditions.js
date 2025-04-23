@@ -23,7 +23,7 @@ export const TermsandConditions = {
         "Service refers to the Website.",
         "Terms and Conditions (also referred as &quot;Terms&quot;) mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service.",
         "Third-party Social Media Service means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.",
-        "Website refers to Vardaan Farms, accessible from <a href='https://digitalmarketing.vardaanfarms.com/' rel='external nofollow noopener' target='_blank'>https://digitalmarketing.vardaanfarms.com/</a>",
+        "Website refers to :- digitalmarketing.vardaanFarms.com",
         "You means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.",
       ],
     },

@@ -4,6 +4,7 @@ import Bannner from "@/components/Layout/Banner/Banner";
 import Navbar from "@/components/Layout/Navbar/Navbar";
 import Cursor from "@/components/Layout/CustomCursor/Cursor";
 import Footer from "@/components/Layout/Footer/Footer";
+import Arrowup from "@/components/Layout/ArrowUp/ArrowUp";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           {children}
           <Footer/>
+          <Arrowup/>
         </main>
       </body>
     </html>
