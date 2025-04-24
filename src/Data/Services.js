@@ -77,14 +77,15 @@ export const HowWeCompleteProjectsData = {
   ]
 }
 
-export const floatingDotsData = Array.from({ length: 50 }, (_, id) => ({
-  id,
-  color: [
-    "bg-red-600", "bg-green-600", "bg-pink-400", "bg-gray-300",
+
+export const generateFLoatingDotsdata = (count = 50) =>{
+    const colors = ["bg-red-600", "bg-green-600", "bg-pink-400", "bg-gray-300",
     "bg-neutral-500", "bg-red-800", "bg-yellow-300", "bg-orange-400",
-    "bg-orange-100", "bg-green-100"
-  ][Math.floor(Math.random() * 10)], 
-  p: "4",
-  x: Math.floor(Math.random() * 2000),
-  y: Math.floor(Math.random() * 700)
-}));
+    "bg-orange-100", "bg-green-100"];
+   return Array.from({length:count},(_,i)=>({
+    id:i,
+    x:Math.floor(Math.random() * window.innerWidth),
+    y:Math.floor(Math.random()*window.innerHeight),
+    color:colors[Math.floor(Math.random()*colors.length)],
+   }))
+}

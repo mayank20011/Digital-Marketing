@@ -87,37 +87,37 @@ export default function Footer() {
             <div className="flex flex-col gap-3">
               <div className="flex gap-4 items-center">
                 <div className="border p-[3px] rotate-45 border-l-0 border-b-0 border-orange-400"></div>
-                <Link href={"/"} className="hover:text-orange-500">
+                <Link href={"/business-development"} className="hover:text-orange-500">
                   Business Development
                 </Link>
               </div>
               <div className="flex gap-4 items-center">
                 <div className="border p-[3px] rotate-45 border-l-0 border-b-0 border-orange-400"></div>
-                <Link href={"/about-us"} className="hover:text-orange-500">
+                <Link href={"/digital-marketing"} className="hover:text-orange-500">
                   Digital Marketing
                 </Link>
               </div>
               <div className="flex gap-4 items-center">
                 <div className="border p-[3px] rotate-45 border-l-0 border-b-0 border-orange-400"></div>
-                <Link href={"/contact-us"} className="hover:text-orange-500">
+                <Link href={"/investment-strategies"} className="hover:text-orange-500">
                   Investment Strategies
                 </Link>
               </div>
               <div className="flex gap-4 items-center">
                 <div className="border p-[3px] rotate-45 border-l-0 border-b-0 border-orange-400"></div>
-                <Link href={"/services"} className="hover:text-orange-500">
+                <Link href={"/market-analysis"} className="hover:text-orange-500">
                   Market Analysis
                 </Link>
               </div>
               <div className="flex gap-4 items-center">
                 <div className="border p-[3px] rotate-45 border-l-0 border-b-0 border-orange-400"></div>
-                <Link href={"/services"} className="hover:text-orange-500">
+                <Link href={"/project-management"} className="hover:text-orange-500">
                   Project Management
                 </Link>
               </div>
               <div className="flex gap-4 items-center">
                 <div className="border p-[3px] rotate-45 border-l-0 border-b-0 border-orange-400"></div>
-                <Link href={"/services"} className="hover:text-orange-500">
+                <Link href={"/web-development"} className="hover:text-orange-500">
                   Web Development
                 </Link>
               </div>

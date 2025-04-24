@@ -63,13 +63,13 @@ export default function ReviewSwiper() {
               <p className="grow">{obj.pera}</p>
               <span className="border-1 border-slate-100"></span>
               <div className="flex gap-6 items-center">
-                <Image
+                {/* <Image
                   src={""}
                   alt={""}
                   width={70}
                   height={70}
                   className="rounded-full border-1 shadow-lg "
-                />
+                /> */}
                 <div className="flex flex-col gap-1">
                   <h5 className="font-bold ">{obj.name}</h5>
                   <p className="text-sm text-neutral-700">{obj.position}</p>

@@ -17,7 +17,7 @@ export default function HowWeCompleteProjects() {
           {HowWeCompleteProjectsData.cards.map((card,index) => (
             <div key={index} className="flex gap-6 items-center">
               <div className="w-3/10 sm:w-1/5">
-                <Image src={card.img} alt={card.alt} width={60} height={60} classname="w-full h-full"/>
+                <Image src={card.img} alt={card.alt} width={60} height={60} className="w-full h-full"/>
               </div>
               <div className="flex flex-col gap-4">
                 <div className={`text-sm md:text-lg p-2 px-3 rounded-full text-white w-fit -translate-x-[20px] ${index ==1 ? 'bg-blue-300 ':'bg-orange-300'}`}>{`0${index+1}`}</div>

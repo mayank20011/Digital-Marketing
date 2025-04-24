@@ -21,7 +21,7 @@ const InfiniteSlide = () => {
         spaceBetween={60}
         allowTouchMove={false}
         freeMode={true}
-        freeModeMomentum={false}
+        // freeModeMomentum={false}
         grabCursor={false}
         className="relative bg-orange-300"
       >

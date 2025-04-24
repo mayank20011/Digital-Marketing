@@ -10,9 +10,9 @@ export default function Home() {
     <>
       <div className="flex flex-col gap-12 md:gap-24">
         <HeroSection />
-        <HowItWorks/>
-        <WhatWeDo/>
-        <WhyWeAreBetter/>
+        <HowItWorks />
+        <WhatWeDo />
+        <WhyWeAreBetter />
         <WhyUs />
       </div>
       <HomeAnimation />
