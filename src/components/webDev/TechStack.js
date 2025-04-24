@@ -15,7 +15,7 @@ export default function TechStack() {
       </p>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-12 w-full md:w-4/5 mx-auto">
         {imgArray.map((obj, id) => (
-          <div className="bg-slate-50 flex items-center justify-center py-2 border px-2">
+          <div key={id} className="bg-slate-50 flex items-center justify-center py-2 border px-2">
           <Image
             key={id}
             src={obj.src}

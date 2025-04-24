@@ -11,7 +11,7 @@ export default function WebDevBanner() {
         </h1>
         <p className="md:text-lg text-neutral-500">
           We build high-performing, secure, and scalable web solutions designed
-          to grow with your business. Whether you're starting fresh, revamping
+          to grow with your business. Whether you&apos;re starting fresh, revamping
           your site, or optimizing its performance—our front-end and back-end
           experts are here to bring your digital vision to life
         </p>
