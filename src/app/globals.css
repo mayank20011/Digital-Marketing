@@ -8,6 +8,11 @@
     width: 80%;
   }
 
+  @media (max-width: 500px) {
+    .custom-container {
+      width: 95%;
+    }
+  }
 }
 
 /* *{
@@ -21,10 +26,3 @@ body{
   scrollbar-color: black white;
   user-select: none;
 }
-
-/* .whoAreWeBg{
-  background-image: url("./vardaanfarms/public/whoWeAreCard1Bg.svg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
