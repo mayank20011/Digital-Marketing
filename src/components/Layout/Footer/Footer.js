@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 export default function Footer() {
   return (
-    <div className="bg-neutral-700 text-white mt-12">
+    <div className="bg-neutral-700 text-white">
       <div className="custom-container py-12 flex flex-col gap-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-[2fr_1fr_1fr] 2xl:grid-cols-[2fr_1fr_1fr_1fr] gap-4 sm:gap-6 justify-between sm:grid-rows-[auto_auto_auto] xl:grid-rows-2 2xl:grid-rows-1 xl:grid-rows-auto">
           

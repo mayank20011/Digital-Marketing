@@ -29,7 +29,7 @@ export default function DmProof() {
                 <h1 className="text-center text-[50px] md:text-[60px] lg:text-[80px] font-bold ">
                   {obj.no}%
                 </h1>
-                <p>{obj.text}</p>
+                <p className="text-center">{obj.text}</p>
               </div>
             ))}
           </div>

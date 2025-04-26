@@ -6,7 +6,7 @@ import WhyUsDigitalMarketing from "@/components/DigitalMarketing/WhyUsDigitalMar
 
 export default function DigiTalMarketingPage() {
   return (
-    <div className="flex flex-col gap-6 md:gap-12">
+    <div className="flex flex-col gap-6 md:gap-12 pb-12">
       <DigitalMarketingTopBanner />
       <WhyUsDigitalMarketing />
       <HowToChooseDm/>
