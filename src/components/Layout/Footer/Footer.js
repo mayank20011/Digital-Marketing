@@ -99,8 +99,8 @@ export default function Footer() {
               </div>
               <div className="flex gap-4 items-center">
                 <div className="border p-[3px] rotate-45 border-l-0 border-b-0 border-orange-400"></div>
-                <Link href={"/investment-strategies"} className="hover:text-orange-500">
-                  Investment Strategies
+                <Link href={"/seo"} className="hover:text-orange-500">
+                  SEO
                 </Link>
               </div>
               <div className="flex gap-4 items-center">

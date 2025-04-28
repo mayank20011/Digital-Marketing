@@ -5,7 +5,7 @@ import ServiceCardsContainer from "@/components/Services/ServicesCardsContainer"
 
 export default function ServicesPage() {
   return (
-    <div className="flex flex-col gap-12">
+    <div className="flex flex-col gap-12 pb-6 md:py-12">
       <ServiceBanner/>
       <FloatingBubbles/>
       <ServiceCardsContainer />
