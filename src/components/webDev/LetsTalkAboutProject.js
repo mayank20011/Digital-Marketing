@@ -6,7 +6,7 @@ export default function LetsTalkAboutProject() {
         LET&apos;S TALK ABOUT PROJECT
       </h1>
       <p>
-        Let&apos00;s bring it to life together. Whether you&apos;re starting from
+        Let&apos;s bring it to life together. Whether you&apos;re starting from
         scratch or need expert help scaling your existing product, we&apos;re
         here to understand your goals and turn them into a powerful digital
         solution—designed for impact, growth, and real results.

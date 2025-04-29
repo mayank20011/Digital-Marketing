@@ -4,7 +4,7 @@ import { MaximizeGrowthHoverData as hoverData } from "@/Data/seoData";
 export default function MaximizeGrowth() {
   return (
     <div>
-      <div className="custom-container flex flex-col gap-6 lg:gap-0">
+      <div className="custom-container flex flex-col gap-6">
         <div className="flex gap-6 md:gap-12 lg:gap-24 flex-col md:flex-row items-center">
           <div className="w-full md:w-1/2 flex flex-col gap-6">
             <h1 className="text-4xl font-bold">
@@ -28,10 +28,10 @@ export default function MaximizeGrowth() {
             </div>
           </div>
           <div className="w-full md:w-1/2">
-            <Image src="" alt="" height={500} width={500} className="w-full" />
+            <Image src="/grow-scaled-1.avif" alt="Growth Image" height={500} width={500} className="w-full" />
           </div>
         </div>
-        <div className="bg-gradient-to-r from-orange-600 to-pink-600 p-[2px] rounded-[50px] lg:w-4/5 xl:-translate-y-1/3">
+        <div className="bg-gradient-to-r from-orange-600 to-pink-600 p-[2px] rounded-[50px] lg:w-4/5">
           <div className="grid p-4 grid-cols-2 sm:grid-cols-3 bg-white rounded-[50px] gap-4 sm:gap-2">
              {hoverData.map((data,id)=>(
               <div key={id} className={`flex gap-2 sm:gap-4 justify-center items-center ${id == 2 ? 'col-span-2 sm:col-span-1' :''}`}>
