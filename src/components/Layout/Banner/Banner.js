@@ -6,7 +6,7 @@ export default function Bannner() {
   return (
     <>
       <div className="bg-slate-700 hidden md:block overflow-y-hidden">
-        <div className="custom-container py-4 text-white flex justify-between text-sm">
+        <div className="custom-container py-4 text-white flex justify-between text-xs">
           <div className="flex gap-4">
             <ImgText
               url={"/mailLogo.png"}

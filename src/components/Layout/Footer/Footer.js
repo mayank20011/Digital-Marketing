@@ -105,14 +105,14 @@ export default function Footer() {
               </div>
               <div className="flex gap-4 items-center">
                 <div className="border p-[3px] rotate-45 border-l-0 border-b-0 border-orange-400"></div>
-                <Link href={"/market-analysis"} className="hover:text-orange-500">
-                  Market Analysis
+                <Link href={"/content-marketing"} className="hover:text-orange-500">
+                  Content Marketing
                 </Link>
               </div>
               <div className="flex gap-4 items-center">
                 <div className="border p-[3px] rotate-45 border-l-0 border-b-0 border-orange-400"></div>
-                <Link href={"/project-management"} className="hover:text-orange-500">
-                  Project Management
+                <Link href={"/performance-marketing"} className="hover:text-orange-500">
+                  Performance Marketing
                 </Link>
               </div>
               <div className="flex gap-4 items-center">
