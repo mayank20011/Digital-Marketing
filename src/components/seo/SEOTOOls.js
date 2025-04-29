@@ -14,6 +14,7 @@ export default function SEOTOOLS() {
               className={`flex justify-between w-1/2 border-dashed relative ${
                 (id + 1) % 2 == 0 ? "self-start border-r border-orange-300" : " border-l self-end border-pink-300"
               }`}
+              key={id}
             >
               <div className="w-full flex flex-col">
                 <div
