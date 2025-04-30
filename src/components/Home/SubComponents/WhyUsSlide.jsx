@@ -1,7 +1,7 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay} from "swiper/modules";
 import Image from "next/image";
 const WhyUsSlide = () => {
 
@@ -10,9 +10,6 @@ const WhyUsSlide = () => {
       <Swiper
         slidesPerView={2}
         spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
         breakpoints={{
           640: {
             slidesPerView: 3,
@@ -24,7 +21,8 @@ const WhyUsSlide = () => {
             slidesPerView: 5,
           },
         }}
-        modules={[Pagination, Autoplay]}
+        loop={true}
+        modules={[Autoplay]}
         autoplay={{ delay: 2000, disableOnInteraction: true }}
         className="w-full"
         wrapperClass="flex items-center pb-6"

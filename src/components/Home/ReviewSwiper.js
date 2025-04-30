@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useRef } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination, Autoplay, Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import { testimonialData } from "@/Data/homeData";
 import Image from "next/image";
 import "swiper/css/navigation";
@@ -13,9 +13,6 @@ export default function ReviewSwiper() {
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
-        pagination={{
-          clickable: true,
-        }}
         ref={swiperRef}
         breakpoints={{
           640: {
@@ -42,7 +39,7 @@ export default function ReviewSwiper() {
         }}
         speed={3000}
         loop={true}
-        modules={[Pagination, Autoplay, Navigation]}
+        modules={[Autoplay, Navigation]}
         navigation={{ nextEl: ".swiperNext", prevEl: ".swiperPrev" }}
         className="w-full border-green-600 relative"
         wrapperClass="pb-6 flex grow"
@@ -78,7 +75,8 @@ export default function ReviewSwiper() {
             </div>
           </SwiperSlide>
         ))}
-        <div className="w-fit flex gap-2 absolute right-0 bottom-[50px] sm:bottom-[20px]">
+        <div className="w-fit flex gap-2 absolute right-0 bottom-[50px] sm:bottom-[20px]
+        z-[10]">
           <div className="swiperPrev p-1 sm:p-4 rounded-sm bg-orange-300 hover:scale-90 cursor-pointer">
             <Image
               src={"/arrowLeft.png"}
