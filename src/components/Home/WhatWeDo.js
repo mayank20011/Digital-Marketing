@@ -5,15 +5,14 @@ export default function WhatWeDo() {
     <div className="custom-container flex flex-col gap-6 md:gap-12">
       <h2 className="text-4xl text-center font-bold">What We do ?</h2>
       <div className="w-full grid md:grid-cols-2 gap-6">
-        {whatWeDo.map((data) => (
-          <Link href={data.href}>
+        {whatWeDo.map((data,id) => (
+          <Link key={id} href={data.href}>
             <div
               className={`flex items-center gap-6 p-4 sm:p-6 rounded-2xl border-2 border-b-8 border-black hover:scale-102 transition flex-col lg:flex-row cursor-pointer ${
                 data.bg == "black"
                   ? "bg-black text-white border-slate-200"
                   : "bg-white text-black"
               }`}
-              key={data.heading}
             >
               <div className={""}>
                 <img src="/digitalMarketing.webp" alt="" />
