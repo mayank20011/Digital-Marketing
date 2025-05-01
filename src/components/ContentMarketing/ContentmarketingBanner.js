@@ -39,6 +39,7 @@ export default function ContentmarketingBanner() {
           height={800}
           className="w-full md:w-1/2 order-1 md:order-2"
           style={{ filter: "drop-shadow(5px 5px 2px black)" }}
+          priority
         />
       </div>
     </div>
