@@ -8,8 +8,8 @@ export default function MarketInsights(){
         {data.cards.map((card,id)=>(
           <div key={id} className={`flex flex-col gap-2 p-4 border rounded-xl ${card.bg == "#ffffff" ? 'text-black' : 'text-white'}`} style={{backgroundColor:`${card.bg}`}}>
             <Image src={card.src} alt={card.alt} width={50} height={50}/>
-          <h1 className="text-xl md:text-2xl font-bold">{card.heading}</h1>
-          <p>{card.pera}</p>
+          <h1 className="text-xl md:text-2xl font-bold text-black">{card.heading}</h1>
+          <p className="text-black">{card.pera}</p>
         </div>
         ))}
        </div>

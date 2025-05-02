@@ -6,7 +6,7 @@ export const cmServices = {
       alt: "Blog Writing",
       heading: "Blog Writing",
       pera: "SEO-optimized blogs that educate, engage readers, and improve your search visibility—positioning your brand as an industry expert while driving qualified organic traffic.",
-      bg: "#ffa011",
+      bg: "#ffcc70",
     },
     {
       src: "/webCopy.png",
@@ -41,49 +41,10 @@ export const cmServices = {
       alt: "Ebook Logo",
       heading: "Whitepapers & eBooks",
       pera: "Comprehensive, high-value resources that showcase your expertise—ideal for lead generation, building trust, and educating your potential clients.",
-      bg: "#ffa011",
+      bg: "	#ffcc70",
     },
   ],
 };
-
-// const PaidCreativityData = [
-//   {
-//     src:"",
-//     alt:"",
-//   },
-//   {
-//     src:"",
-//     alt:"",
-//   },
-//   {
-//     src:"",
-//     alt:"",
-//   },
-//   {
-//     src:"",
-//     alt:"",
-//   },
-//   {
-//     src:"",
-//     alt:"",
-//   },
-//   {
-//     src:"",
-//     alt:"",
-//   },
-//   {
-//     src:"",
-//     alt:"",
-//   },
-//   {
-//     src:"",
-//     alt:"",
-//   },
-//   {
-//     src:"",
-//     alt:"",
-//   },
-// ]
 
 export const OurProcessData = {
   src:"",
