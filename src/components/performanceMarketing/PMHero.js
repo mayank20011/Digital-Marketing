@@ -68,7 +68,7 @@ export default function PerFormanceMarketingHeroSection() {
       <div className="custom-container">
         <div className="flex gap-4 md:w-3/4 mx-auto">
           <p className="text-[60px] font-bold h-[60px] -mt-[30px] text-transparent bg-gradient-to-tr from-orange-300 to-pink-400 bg-clip-text">
-            "
+            &quot;
           </p>
           <div className="flex flex-col gap-4">
             <p className="text-2xl md:text-3xl">
