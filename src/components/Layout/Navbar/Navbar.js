@@ -5,8 +5,8 @@ import NavbarAnimation from "./NavbarAnimation";
 export default async function Navbar() {
   return (
     <>
-      <nav className="bg-white py-2 overflow-hidden">
-        <div className="custom-container flex md:justify-between gap-2 overflow-hidden">
+      <nav className="bg-white overflow-hidden py-2">
+        <div className="custom-container flex md:justify-between gap-2 overflow-hidden items-center">
           
           <div className="grow md:grow-0">
             <Link href="/">

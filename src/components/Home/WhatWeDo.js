@@ -8,7 +8,7 @@ export default function WhatWeDo() {
         {whatWeDo.map((data,id) => (
           <Link key={id} href={data.href}>
             <div
-              className={`flex items-center gap-6 p-4 sm:p-6 rounded-2xl border-2 border-b-8 border-black hover:scale-102 transition flex-col lg:flex-row cursor-pointer ${
+              className={`h-full flex items-center gap-6 p-4 sm:p-6 rounded-2xl border-2 border-b-8 border-black hover:scale-102 transition flex-col lg:flex-row cursor-pointer ${
                 data.bg == "black"
                   ? "bg-black text-white border-slate-200"
                   : "bg-white text-black"
@@ -22,8 +22,7 @@ export default function WhatWeDo() {
                   {data.heading}
                 </h1>
                 <p className="text-sm md:text-md">{data.pera}</p>
-                <Link
-                  href={data.href}
+                <p
                   className={`text-sm md:text-md w-fit px-4 py-2 rounded-md scale-105 transform ${
                     data.bg == "black"
                       ? "hover:bg-white hover:text-black"
@@ -31,7 +30,7 @@ export default function WhatWeDo() {
                   }`}
                 >
                   Read More
-                </Link>
+                </p>
               </div>
             </div>
           </Link>

@@ -28,7 +28,7 @@ export default function HowItWorks() {
                 />
               </div>
               <h2 className="font-bold text-3xl ">{card.number}</h2>
-              <p className="text-xl font-[600] text-neutral-700">{card.pera}</p>
+              <p className="text-sm sm:text-lg font-[600] text-neutral-500">{card.pera}</p>
             </div>
           ))}
         </div>
@@ -109,7 +109,7 @@ export default function HowItWorks() {
               Know More
             </Link>
           </div>
-          <div className="w-full lg:w-2/5 bg-orange-300 rounded-2xl opacity-90 flex flex-col pb-6">
+          <div className="w-full lg:w-2/5 bg-orange-300 rounded-2xl opacity-90 flex flex-col pb-6 border">
             <div className="w-3/5 mx-auto -translate-y-1/5 rocketDiv">
               <Image
                 src={HowItWorksData.strategy.right.img.src}
@@ -121,12 +121,12 @@ export default function HowItWorks() {
             </div>
             <div className="px-4 gap-4 flex flex-col sm:flex-row w-full">
               <div className="w-full bg-white p-4 sm:w-1/2 rounded-xl flex flex-col gap-4">
-               <h1 className="text-center text-lg font-bold">Current Clients</h1>
-                <p className="text-2xl sm:text-4xl md:text-5xl items-center text-center flex mx-auto">300<span className="text-4xl text-orange-600">+</span></p>
+               <h1 className="text-center text-lg font-semibold">Current Clients</h1>
+                <p className="text-2xl sm:text-4xl md:text-5xl items-center text-center flex mx-auto font-bold">300<span className="text-4xl text-orange-600">+</span></p>
               </div>
               <div className="w-full bg-white p-4 sm:w-1/2 rounded-xl flex flex-col gap-4">
-               <h1 className="text-lg font-bold text-center">On Time Delivery</h1> 
-               <p className="text-2xl sm:text-4xl md:text-5xl items-center text-center flex mx-auto">95<span className="text-4xl text-orange-600">%</span></p>
+               <h1 className="text-lg font-bold text-center font-semibold">On Time Delivery</h1> 
+               <p className="text-2xl sm:text-4xl md:text-5xl items-center text-center flex mx-auto font-bold">95<span className="text-4xl text-orange-600">%</span></p>
               </div>
             </div>
           </div>
