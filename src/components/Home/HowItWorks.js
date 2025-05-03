@@ -119,12 +119,12 @@ export default function HowItWorks() {
                 height={300}
               />
             </div>
-            <div className="px-4 gap-4 flex  w-full">
-              <div className="w-1/2 bg-white p-4 rounded-xl flex flex-col gap-4 border">
+            <div className="px-4 gap-2 sm:gap-4 flex  w-full">
+              <div className="w-1/2 bg-white p-2 sm:p-4 rounded-xl flex flex-col gap-4 border">
                <h1 className="text-center font-semibold">Current Clients</h1>
                 <p className="text-3xl sm:text-4xl md:text-5xl items-center text-center flex mx-auto font-bold grow">300<span className="text-4xl text-orange-600">+</span></p>
               </div>
-              <div className="w-1/2 bg-white p-4 rounded-xl flex flex-col gap-4 border">
+              <div className="w-1/2 bg-white p-2 sm:p-4 rounded-xl flex flex-col gap-2 sm:gap-4 border">
                <h1 className="text-center font-semibold">On Time Delivery</h1> 
                <p className="text-3xl sm:text-4xl md:text-5xl items-center text-center flex mx-auto font-bold grow">95<span className="text-4xl text-orange-600">%</span></p>
               </div>
