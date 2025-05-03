@@ -109,7 +109,7 @@ export default function HowItWorks() {
               Know More
             </Link>
           </div>
-          <div className="w-full lg:w-2/5 bg-orange-300 rounded-2xl opacity-90 flex flex-col sm:flex-row lg:flex-col p-4 items-center border">
+          <div className="w-full lg:w-2/5 bg-orange-300 rounded-2xl opacity-90 flex flex-col sm:flex-row lg:flex-col p-4 items-center border gap-2 sm:gap-4 md:gap-6">
             <div className="w-3/5 mx-auto -mt-[60px]">
               <Image
                 src={HowItWorksData.strategy.right.img.src}
@@ -119,14 +119,14 @@ export default function HowItWorks() {
                 height={300}
               />
             </div>
-            <div className="px-4 gap-4 flex flex-col sm:flex-row w-full">
-              <div className="w-full bg-white p-4 sm:w-1/2 rounded-xl flex flex-col gap-4 border">
+            <div className="px-4 gap-4 flex  w-full">
+              <div className="w-1/2 bg-white p-4 rounded-xl flex flex-col gap-4 border">
                <h1 className="text-center font-semibold">Current Clients</h1>
-                <p className="text-2xl sm:text-4xl md:text-5xl items-center text-center flex mx-auto font-bold grow">300<span className="text-4xl text-orange-600">+</span></p>
+                <p className="text-3xl sm:text-4xl md:text-5xl items-center text-center flex mx-auto font-bold grow">300<span className="text-4xl text-orange-600">+</span></p>
               </div>
-              <div className="w-full bg-white p-4 sm:w-1/2 rounded-xl flex flex-col gap-4 border">
+              <div className="w-1/2 bg-white p-4 rounded-xl flex flex-col gap-4 border">
                <h1 className="text-center font-semibold">On Time Delivery</h1> 
-               <p className="text-2xl sm:text-4xl md:text-5xl items-center text-center flex mx-auto font-bold grow">95<span className="text-4xl text-orange-600">%</span></p>
+               <p className="text-3xl sm:text-4xl md:text-5xl items-center text-center flex mx-auto font-bold grow">95<span className="text-4xl text-orange-600">%</span></p>
               </div>
             </div>
           </div>
