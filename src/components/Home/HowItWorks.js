@@ -12,13 +12,13 @@ export default function HowItWorks() {
         <p className="text-center md:text-xl text-slate-600">
           {HowItWorksData.pera}
         </p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {HowItWorksData.cards.map((card) => (
             <div
-              className="p-4 flex flex-col gap-4 text-center hover:-translate-y-[10px] transition hover:shadow-[3px_3px_2px_orange] rounded-lg howItWorksCards"
+              className="sm:p-4 flex flex-col gap-2 sm:gap-4 text-center hover:-translate-y-[10px] transition hover:shadow-2xl rounded-2xl hover:border howItWorksCards p-2"
               key={card.number}
             >
-              <div className="border flex items-center justify-center w-fit mx-auto p-6 rounded-full hover:rotate-x-360 transition duration-1000 shadow-[2px_2px_5px_black]">
+              <div className="flex items-center justify-center w-fit mx-auto p-6 rounded-full hover:rotate-x-360 transition duration-1000 shadow-[2px_2px_5px_black]">
                 <Image
                   src={card.src}
                   alt={card.alt}
@@ -27,8 +27,8 @@ export default function HowItWorks() {
                   height={70}
                 />
               </div>
-              <h2 className="font-bold text-3xl ">{card.number}</h2>
-              <p className="text-sm sm:text-lg font-[600] text-neutral-500">{card.pera}</p>
+              <h2 className="font-bold text-xl md:text-2xl lg:text-3xl ">{card.number}</h2>
+              <p className="text-xs md:text-sm sm:text-lg font-[600] text-neutral-500">{card.pera}</p>
             </div>
           ))}
         </div>
@@ -109,8 +109,8 @@ export default function HowItWorks() {
               Know More
             </Link>
           </div>
-          <div className="w-full lg:w-2/5 bg-orange-300 rounded-2xl opacity-90 flex flex-col pb-6 border">
-            <div className="w-3/5 mx-auto -translate-y-1/5 rocketDiv">
+          <div className="w-full lg:w-2/5 bg-orange-300 rounded-2xl opacity-90 flex flex-col sm:flex-row lg:flex-col p-4 items-center border">
+            <div className="w-3/5 mx-auto -mt-[60px]">
               <Image
                 src={HowItWorksData.strategy.right.img.src}
                 alt={HowItWorksData.strategy.right.img.alt}
@@ -120,13 +120,13 @@ export default function HowItWorks() {
               />
             </div>
             <div className="px-4 gap-4 flex flex-col sm:flex-row w-full">
-              <div className="w-full bg-white p-4 sm:w-1/2 rounded-xl flex flex-col gap-4">
-               <h1 className="text-center text-lg font-semibold">Current Clients</h1>
-                <p className="text-2xl sm:text-4xl md:text-5xl items-center text-center flex mx-auto font-bold">300<span className="text-4xl text-orange-600">+</span></p>
+              <div className="w-full bg-white p-4 sm:w-1/2 rounded-xl flex flex-col gap-4 border">
+               <h1 className="text-center font-semibold">Current Clients</h1>
+                <p className="text-2xl sm:text-4xl md:text-5xl items-center text-center flex mx-auto font-bold grow">300<span className="text-4xl text-orange-600">+</span></p>
               </div>
-              <div className="w-full bg-white p-4 sm:w-1/2 rounded-xl flex flex-col gap-4">
-               <h1 className="text-lg font-bold text-center font-semibold">On Time Delivery</h1> 
-               <p className="text-2xl sm:text-4xl md:text-5xl items-center text-center flex mx-auto font-bold">95<span className="text-4xl text-orange-600">%</span></p>
+              <div className="w-full bg-white p-4 sm:w-1/2 rounded-xl flex flex-col gap-4 border">
+               <h1 className="text-center font-semibold">On Time Delivery</h1> 
+               <p className="text-2xl sm:text-4xl md:text-5xl items-center text-center flex mx-auto font-bold grow">95<span className="text-4xl text-orange-600">%</span></p>
               </div>
             </div>
           </div>
