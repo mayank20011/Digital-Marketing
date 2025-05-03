@@ -7,7 +7,7 @@ import OurImpact from "@/components/AboutUs/OurImpact";
 
 export default function AboutUs(){
   return (
-    <div className="flex flex-col gap-6 md:gap-12 pb-12">
+    <div className="flex flex-col gap-12 md:gap-24 pb-12">
       <AboutUsTopBanner/>
       <WhoWeAre/>
       <WhatWeDoAboutUs/>

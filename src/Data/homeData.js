@@ -207,11 +207,3 @@ export const testimonialData = [
   },
 ];
 
-export const FounderMessageData = {
-  src: "/Foundersimg.jpg",
-  alt: "Founder's Image",
-  heading: "From Our Founder",
-  pera: "Every brand has a story—and ours began with a simple belief: marketing should feel human. We're here to help you grow with honesty, creativity, and strategies that actually work. Over the years, we’ve seen how authentic messaging and clear intent can turn small ideas into powerful brands. That’s why we approach every project with care, collaboration, and a relentless drive to deliver value that goes beyond the usual metrics.",
-  name: "Siddharth Malhan",
-  additional: "Founder @ VardaanTech",
-};
