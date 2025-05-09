@@ -7,6 +7,52 @@ export const bannerData = {
   ytUrl: "https://www.youtube.com/@VardaanFarms",
 };
 
+export const navbarServicesData = [
+  {
+    link:"/business-development",
+    src: "/businessDevelopmentNavIcon.png",
+    alt: "Business Development Logo",
+    heading: "Business Development",
+    pera: "Grow leads and sales efficiently",
+  },
+  {
+    link:"/digital-marketing",
+    src: "/digitalMarketingNavLogo.png",
+    alt: "Digital Marketing Logo",
+    heading: "Digital Marketing",
+    pera: "Boost your brand across platforms",
+  },
+  {
+    link:"/seo",
+    src: "/seoNavLogo.png",
+    alt: "SEO Logo",
+    heading: "SEO",
+    pera: "Rank higher and drive traffic",
+  },
+  {
+    link:"/content-marketing",
+    src: "/contentMarketingNavLogo.png",
+    alt: "Content Marketing Logo",
+    heading: "Content Marketing",
+    pera: "Engage audiences with great content",
+  },
+  {
+    link:"/performance-marketing",
+    src: "/performnaceMarketingNavLogo.png",
+    alt: "Performance Marketing Logo",
+    heading: "Performance Marketing",
+    pera: "Trackable ads that convert fast",
+  },
+  {
+    link:"/web-development",
+    src: "/webDevNavLogo.png",
+    alt: "Web Devlopment Logo",
+    heading: "Web Development",
+    pera: "Modern websites built to perform",
+  },
+];
+
+
 export const heroSectionData = {
   heading: "Grow Your Brand with Smart Digital Marketing",
   pera: "We help startups and businesses boost visibility, drive traffic, and convert leads through tailored digital strategies that actually work.",
@@ -49,17 +95,6 @@ export const whatWeDo = [
     bg: "white",
     href:"/performance-marketing"
   },
-  // {
-  //   heading: "Email Marketing & Automation",
-  //   pera: "Nurture leads and boost retention with targeted, automated email campaigns built to convert.",
-  //   bg: "black",
-  // },
-  // {
-  //   heading: "Analytics & Reporting",
-  //   pera: "We don’t just run campaigns—we measure, optimize, and report everything so you know exactly what’s working.",
-  //   bg: "white",
-  // },
-  ,
 ];
 
 export const WhyWeAreBetterData = {

@@ -5,6 +5,7 @@ import Navbar from "@/components/Layout/Navbar/Navbar";
 import Cursor from "@/components/Layout/CustomCursor/Cursor";
 import Footer from "@/components/Layout/Footer/Footer";
 import Arrowup from "@/components/Layout/ArrowUp/ArrowUp";
+import PaddingTop from "@/components/Layout/PagesPaddingTop/PaddingTop";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -16,10 +17,10 @@ const geistMono = Geist_Mono({
 });
 
 const inter = Inter({
-  variable:"--font-inter",
-  subsets:["latin"],
-  weight:["400","600","700",]
-})
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+});
 
 export const metadata = {
   title: "vardaan farms",
@@ -35,11 +36,14 @@ export default function RootLayout({ children }) {
       >
         <main className="overflow-x-hidden">
           {/* <Cursor /> */}
-          <Bannner />
-          <Navbar />
+          <div className="fixed w-full z-[250] fixedNav">
+            <Bannner />
+            <Navbar />
+          </div>
+          <PaddingTop/>
           {children}
-          <Footer/>
-          <Arrowup/>
+          <Footer />
+          <Arrowup />
         </main>
       </body>
     </html>

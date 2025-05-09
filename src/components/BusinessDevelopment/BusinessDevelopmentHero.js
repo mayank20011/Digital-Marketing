@@ -11,6 +11,7 @@ export default function BusinessDevelopmentHero() {
             height={480}
             className="w-full lg:w-9/10"
             style={{filter:'drop-shadow(2px 2px 2px black)'}}
+            priority
           />
         </div>
       </div>
