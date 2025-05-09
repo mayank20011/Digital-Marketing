@@ -9,19 +9,19 @@ export const whoWeAre = {
   cards: {
     card1: {
       src: "/whoWeAreCard1.svg",
-      alt: "",
+      alt: "Growth Logo",
       heading: "Driven by Purpose",
       pera: "We believe digital marketing should feel intentional—not random. Every strategy we craft is rooted in your goals, values, and the audience you actually want to connect with.",
     },
     card2: {
       src: "whoWeAreCard2.svg",
-      alt: "",
+      alt: "Cake Logo",
       heading: "Creative, Yet Strategic",
       pera: "We blend storytelling with data-backed decisions to help your brand grow online—whether it's through SEO, ads, or content that captures real attention, not just views.",
     },
     card3: {
       src: "whoWeAreCard3.svg",
-      alt: "",
+      alt: "File Logo",
       heading: "Focused on Results",
       pera: "Our mission is simple: help you get seen, get leads, and grow. We prioritize clarity, transparency, and long-term wins over quick fixes or vanity metrics.",
     },

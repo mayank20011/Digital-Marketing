@@ -24,13 +24,15 @@ export default function WhatWeDoAboutUs() {
             ))}
           </div>
         </div>
-        <Image
-          src={"/Marketing.png"}
-          alt={""}
-          width={800}
-          height={800}
-          className="drop-shadow-[3px_3px_2px_black]"
-        />
+        <div className="bg-gradient-to-r from-orange-600 to-pink-500 rounded-2xl">
+          <Image
+            src={"/grow-scaled-1.avif"}
+            alt={"marketing png"}
+            width={800}
+            height={800}
+            className="rounded-2xl shadow-[5px_5px_1px_black] -translate-y-[10px] -translate-x-[10px] border-2 border-white"
+          />
+        </div>
       </div>
     </div>
   );

@@ -23,6 +23,7 @@ export default function CardsContainer() {
                   className=""
                   width={50}
                   height={50}
+                  priority
                 />
               </div>
               <h1 className="text-xl lg:text-3xl font-bold text-center">{obj.heading}</h1>
