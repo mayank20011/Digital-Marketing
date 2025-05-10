@@ -9,8 +9,8 @@ export default function Arrowup() {
   }, [click]);
 
   return (
-    <div className="flex flex-col items-center justify-center w-full">
-      <div className="fixed bottom-[30px] custom-container bg-transparent flex justify-end">
+    <div className="flex flex-col items-end justify-end custom-container">
+      <div className="fixed bottom-[30px] bg-transparent flex justify-end w-fit">
         <div
           className="cursor-pointer hover:scale-110 transition hover:shadow-black"
           onClick={() => {

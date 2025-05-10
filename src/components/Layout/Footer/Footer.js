@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+import FooterLink from "./FooterLink";
 export default function Footer() {
   return (
     <div className="bg-neutral-700 text-white">
       <div className="custom-container py-12 flex flex-col gap-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-[2fr_1fr_1fr] 2xl:grid-cols-[2fr_1fr_1fr_1fr] gap-4 sm:gap-6 justify-between sm:grid-rows-[auto_auto_auto] xl:grid-rows-2 2xl:grid-rows-1 xl:grid-rows-auto">
-          
           <div className="flex flex-col gap-2 md:gap-6 sm:col-span-2 xl:col-span-1 xl:pr-[40px] 2xl:pr-[60px] h-fit">
             <h1
               className="text-3xl font-bold"
@@ -42,39 +42,29 @@ export default function Footer() {
             <div className="flex flex-col gap-3">
               <div className="flex gap-4 items-center">
                 <div className="border p-[3px] rotate-45 border-l-0 border-b-0 border-orange-400"></div>
-                <Link href={"/"} className="hover:text-orange-500">
-                  Home
-                </Link>
+                <FooterLink href={"/"}>Home</FooterLink>
               </div>
               <div className="flex gap-4 items-center">
                 <div className="border p-[3px] rotate-45 border-l-0 border-b-0 border-orange-400"></div>
-                <Link href={"/about-us"} className="hover:text-orange-500">
-                  About Us
-                </Link>
+                <FooterLink href={"/about-us"}>About Us</FooterLink>
               </div>
               <div className="flex gap-4 items-center">
                 <div className="border p-[3px] rotate-45 border-l-0 border-b-0 border-orange-400"></div>
-                <Link href={"/contact-us"} className="hover:text-orange-500">
-                  Contact Us
-                </Link>
+                <FooterLink href={"/contact-us"}>Contact Us</FooterLink>
               </div>
               <div className="flex gap-4 items-center">
                 <div className="border p-[3px] rotate-45 border-l-0 border-b-0 border-orange-400"></div>
-                <Link href={"/services"} className="hover:text-orange-500">
-                  Services
-                </Link>
+                <FooterLink href={"/services"}>Services</FooterLink>
               </div>
               <div className="flex gap-4 items-center">
                 <div className="border p-[3px] rotate-45 border-l-0 border-b-0 border-orange-400"></div>
-                <Link href={"/privacy-policy"} className="hover:text-orange-500">
-                  Privacy Policy
-                </Link>
+                <FooterLink href={"/privacy-policy"}>Privacy Policy</FooterLink>
               </div>
               <div className="flex gap-4 items-center">
                 <div className="border p-[3px] rotate-45 border-l-0 border-b-0 border-orange-400"></div>
-                <Link href={"/terms-and-consitions"} className="hover:text-orange-500">
+                <FooterLink href={"/terms-and-conditions"}>
                   Terms & Conditions
-                </Link>
+                </FooterLink>
               </div>
             </div>
           </div>
@@ -87,39 +77,37 @@ export default function Footer() {
             <div className="flex flex-col gap-3">
               <div className="flex gap-4 items-center">
                 <div className="border p-[3px] rotate-45 border-l-0 border-b-0 border-orange-400"></div>
-                <Link href={"/business-development"} className="hover:text-orange-500">
+                <FooterLink href={"/business-development"}>
                   Business Development
-                </Link>
+                </FooterLink>
               </div>
               <div className="flex gap-4 items-center">
                 <div className="border p-[3px] rotate-45 border-l-0 border-b-0 border-orange-400"></div>
-                <Link href={"/digital-marketing"} className="hover:text-orange-500">
+                <FooterLink href={"/digital-marketing"}>
                   Digital Marketing
-                </Link>
+                </FooterLink>
               </div>
               <div className="flex gap-4 items-center">
                 <div className="border p-[3px] rotate-45 border-l-0 border-b-0 border-orange-400"></div>
-                <Link href={"/seo"} className="hover:text-orange-500">
-                  SEO
-                </Link>
+                <FooterLink href={"/seo"}>SEO</FooterLink>
               </div>
               <div className="flex gap-4 items-center">
                 <div className="border p-[3px] rotate-45 border-l-0 border-b-0 border-orange-400"></div>
-                <Link href={"/content-marketing"} className="hover:text-orange-500">
+                <FooterLink href={"/content-marketing"}>
                   Content Marketing
-                </Link>
+                </FooterLink>
               </div>
               <div className="flex gap-4 items-center">
                 <div className="border p-[3px] rotate-45 border-l-0 border-b-0 border-orange-400"></div>
-                <Link href={"/performance-marketing"} className="hover:text-orange-500">
+                <FooterLink href={"/performance-marketing"}>
                   Performance Marketing
-                </Link>
+                </FooterLink>
               </div>
               <div className="flex gap-4 items-center">
                 <div className="border p-[3px] rotate-45 border-l-0 border-b-0 border-orange-400"></div>
-                <Link href={"/web-development"} className="hover:text-orange-500">
+                <FooterLink href={"/web-development"}>
                   Web Development
-                </Link>
+                </FooterLink>
               </div>
             </div>
           </div>
@@ -139,28 +127,52 @@ export default function Footer() {
                 href=""
                 className="px-4 p-2 border rounded-2xl flex gap-1 items-center border-orange-400 hover:border-orange-300 text-sm font-bold transition w-fit"
               >
-                <Image src={"/facebookLogo.png"} alt={"Face Book Logo"} width={20} height={20} className="" />
+                <Image
+                  src={"/facebookLogo.png"}
+                  alt={"Face Book Logo"}
+                  width={20}
+                  height={20}
+                  className=""
+                />
                 <span className="text-xs">Facebook</span>
               </a>
               <a
                 href=""
                 className="px-4 p-2 border rounded-2xl flex gap-1 items-center border-orange-400 hover:border-orange-300 text-sm font-bold transition w-fit"
               >
-                <Image src={"/twitterLogo.png"} alt={"Twitter Logo"} width={20} height={20} className="" />
+                <Image
+                  src={"/twitterLogo.png"}
+                  alt={"Twitter Logo"}
+                  width={20}
+                  height={20}
+                  className=""
+                />
                 <span className="text-xs">Twitter</span>
               </a>
               <a
                 href=""
                 className="px-4 p-2 border rounded-2xl flex gap-1 border-orange-400 hover:border-orange-300 text-sm font-bold transition w-fit items-center"
               >
-                <Image src={"/igLogo.png"} alt={""} width={20} height={20} className="" />
+                <Image
+                  src={"/igLogo.png"}
+                  alt={""}
+                  width={20}
+                  height={20}
+                  className=""
+                />
                 <span className="text-xs">Instagram</span>
               </a>
               <a
                 href=""
                 className="px-4 p-2 border rounded-2xl flex gap-1 border-orange-400 hover:border-orange-300 text-sm font-bold transition w-fit items-center"
               >
-                <Image src={"/linkedinLogo.png"} alt={""} width={20} height={20} className="" />
+                <Image
+                  src={"/linkedinLogo.png"}
+                  alt={""}
+                  width={20}
+                  height={20}
+                  className=""
+                />
                 <span className="text-xs">Linkedin</span>
               </a>
             </div>
@@ -169,11 +181,11 @@ export default function Footer() {
         <div className="border border-b-0 opacity-50"></div>
         <p className="text-center">
           Copyright 2025 | All rights reserved |
-          <Link href={""} className="hover:text-orange-400">
+          <Link href={"/privacy-policy"} className="hover:text-orange-600">
             {" PrivacyPolicy "}
           </Link>
           |
-          <Link href={""} className="hover:text-orange-400">
+          <Link href={"/terms-and-conditions"} className="hover:text-orange-600">
             {" Terms & Conditions"}
           </Link>
         </p>

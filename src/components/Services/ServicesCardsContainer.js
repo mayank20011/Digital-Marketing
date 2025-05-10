@@ -2,14 +2,16 @@ import { ServiceCards } from "@/Data/Services";
 import Image from "next/image";
 import Link from "next/link";
 import InfiniteSlide from "./InfiniteSlide";
+import ChangingNavDom from "./ChangingNavDom";
 export default function ServiceCardsContainer() {
   return (
     <div className="w-full bg-transparent pt-12 flex flex-col gap-12">
       <div className="custom-container grid md:grid-cols-2 xl:grid-cols-3 gap-12">
         {ServiceCards.map((obj, id) => (
-          <div
-            className="flex flex-col gap-4 px-6 pb-4 rounded-2xl shadow-sm relative z-20 cursor-pointer hover:-translate-y-[10px] transition hover:shadow-xl duration-500 hover:animate-pulse"
-            key={id}
+          <div className="servicePageCards" key={id}>
+          <Link href={obj.href}
+            className="servicePageCards flex flex-col gap-4 px-6 pb-4 rounded-2xl shadow-sm relative z-20 cursor-pointer hover:-translate-y-[10px] transition hover:shadow-xl duration-500 hover:animate-pulse"
+            // key={id}
             style={{
               backgroundColor: "rgba(255,255,255,0.30)",
               backdropFilter: "blur(20px)",
@@ -39,7 +41,7 @@ export default function ServiceCardsContainer() {
             </div>
             <h1 className="text-2xl">{obj.heading}</h1>
             <p className="text-neutral-500">{obj.pera}</p>
-            <Link href={obj.href} className="flex gap-4 items-center">
+            <div className="flex gap-4 items-center">
               <div className="w-fit rounded-full">
                 <Image
                   src="/arrowRightWhite.png"
@@ -52,11 +54,13 @@ export default function ServiceCardsContainer() {
               <p className="w-0 overflow-hidden hover:w-full transition duration-[2000ms] text-nowrap">
                 Link Text
               </p>
-            </Link>
+            </div>
+          </Link>
           </div>
         ))}
       </div>
       <InfiniteSlide />
+      <ChangingNavDom/>
     </div>
   );
 }

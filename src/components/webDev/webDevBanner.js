@@ -7,7 +7,7 @@ export default function WebDevBanner() {
           className="text-2xl md:text-3xl lg:text-5xl font-bold"
           style={{ filter: "drop-shadow(2px 2px 1px white)" }}
         >
-          <span className="">WebDevelopment</span> Services
+          <span className="">Web Development</span> Services
         </h1>
         <p className="md:text-lg text-neutral-500">
           We build high-performing, secure, and scalable web solutions designed
