@@ -5,17 +5,17 @@ import Link from "next/link";
 export default function HowItWorks() {
   return (
     <>
-      <div className="custom-container flex flex-col gap-12">
-        <h1 className="text-4xl text-center font-bold">
+      <div className="custom-container flex flex-col gap-12 hiwDiv">
+        <h1 className="text-4xl text-center font-bold relative opacity-0 translate-y-[50px] hiwHeading">
           {HowItWorksData.heading}
         </h1>
-        <p className="text-center md:text-xl text-slate-600">
+        <p className="text-center md:text-xl text-slate-600 relative opacity-0 translate-y-[50px] hiwPera ">
           {HowItWorksData.pera}
         </p>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {HowItWorksData.cards.map((card) => (
             <div
-              className="sm:p-4 flex flex-col gap-2 sm:gap-4 text-center hover:-translate-y-[10px] transition hover:shadow-2xl rounded-2xl hover:border howItWorksCards p-2"
+              className="sm:p-4 flex flex-col gap-2 sm:gap-4 text-center hover:-translate-y-[10px] transition hover:shadow-2xl rounded-2xl hover:border howItWorksCards p-2 relative translate-y-[250px] opacity-0 hiwCards"
               key={card.number}
             >
               <div className="flex items-center justify-center w-fit mx-auto p-6 rounded-full hover:rotate-x-360 transition duration-1000 shadow-[2px_2px_5px_black]">
@@ -32,32 +32,32 @@ export default function HowItWorks() {
             </div>
           ))}
         </div>
-        <div className="flex gap-12 items-center flex-col lg:flex-row">
+        <div className="flex gap-12 items-center flex-col lg:flex-row hiwDiv2">
           <div className="w-4/5 sm:w-2/5 aspect-[16/9]">
             <img
               src={HowItWorksData.about.src}
               alt={HowItWorksData.about.alt}
-              className="w-full"
+              className="w-full relative opacity-0 hiwGrowthImg"
               loading="lazy"
             />
           </div>
-          <div className="flex flex-col gap-6 w-full lg:w-1/2">
-            <h1 className="text-3xl font-bold">
+          <div className="flex flex-col gap-6 w-full lg:w-1/2 hiw2txt">
+            <h1 className="text-3xl font-bold relative">
               {HowItWorksData.about.heading}
             </h1>
-            <p className="text-md sm:text-md text-neutral-700">
+            <p className="text-md sm:text-md text-neutral-700 relative">
               {HowItWorksData.about.pera}
             </p>
             <div className="border p-4 rounded-2xl border-slate-200 flex flex-col sm:flex-row">
               <div className="p-4 flex flex-col sm:text-center gap-4 bg-slate-100 rounded-xl w-full sm:w-1/2">
-                <h1 className="text-xl font-bold">
+                <h1 className="text-xl font-bold relative">
                   {HowItWorksData.about.cardl.heading}
                 </h1>
-                <p className="text-neutral-500">
+                <p className="text-neutral-500 relative">
                   {HowItWorksData.about.cardl.pera}
                 </p>
                 <Link
-                  className="w-fit px-6 py-2 rounded-2xl text-white sm:mx-auto bg-orange-300 transition hover:scale-95"
+                  className="w-fit px-6 py-2 rounded-2xl text-white sm:mx-auto bg-orange-300 transition hover:scale-95 hiw2txtlink relative"
                   href={"/contact-us"}
                 >
                   Lets Connect
@@ -72,7 +72,7 @@ export default function HowItWorks() {
                       width={24}
                       height={24}
                     />
-                    <p>{data}</p>
+                    <p className="relative">{data}</p>
                   </span>
                 ))}
               </div>
@@ -81,15 +81,15 @@ export default function HowItWorks() {
         </div>
         <div className="flex gap-12 items-center justify-center flex-col lg:flex-row">
           <div className="w-full flex flex-col gap-6 lg:w-3/5">
-            <h1 className="text-3xl font-bold">
+            <h1 className="text-3xl font-bold rocketh">
               {HowItWorksData.strategy.left.heading}
             </h1>
-            <p className="text-lg text-neutral-500">
+            <p className="text-lg text-neutral-500 rocketp">
               {HowItWorksData.strategy.left.pera}
             </p>
             <div className="flex flex-col gap-6">
               {HowItWorksData.strategy.left.points.map((data) => (
-                <span className="flex gap-4" key={data}>
+                <span className="flex gap-4 rocketpoints" key={data}>
                   <div className="h-[24px] self-center">
                     <Image
                       src="/arrowUpRight.png"
@@ -104,7 +104,7 @@ export default function HowItWorks() {
             </div>
             <Link
               href="/about-us"
-              className="px-4 py-2 rounded-2xl text-white bg-orange-300 w-fit "
+              className="px-4 py-2 rounded-2xl text-white bg-orange-300 w-fit rocketButton"
             >
               Know More
             </Link>

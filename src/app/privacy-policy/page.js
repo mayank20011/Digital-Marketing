@@ -10,6 +10,7 @@ export default function PrivacyPolicy() {
           width={1280}
           height={331}
           className="w-full h-full"
+          priority
         />
         <div className="custom-container flex flex-col gap-4 items-center absolute text-white text-center">
           <h1 className="text-2xl sm:text-4xl font-bold">Privacy Policy</h1>

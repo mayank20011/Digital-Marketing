@@ -11,7 +11,7 @@ export default function SEOBanner() {
            <Link href={"/contact-us"} className="px-4 py-2 rounded-2xl border w-fit text-white bg-black hover:-translate-y-[5px] transition hover:shadow-[5px_5px_2px_black] hover:text-black hover:bg-white hover:border-black text-sm">Contact Us</Link>
         </div>
         <div className="w-full md:w-1/2 order-1 md:order-2">
-          <Image src={seoHero.src} alt={seoHero.alt} width={850} height={550} style={{filter:"drop-shadow(5px 5px 12px black)"}} className="w-full"/>
+          <Image src={seoHero.src} alt={seoHero.alt} width={850} height={550} style={{filter:"drop-shadow(5px 5px 12px black)"}} className="w-full" priority/>
         </div>
       </div>
     </div>

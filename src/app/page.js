@@ -1,10 +1,10 @@
 import WhyUs from "@/components/Home/WhyUs";
 import "./globals.css";
-import HomeAnimation from "./HomeAnimation";
 import HeroSection from "@/components/Home/HeroSection";
 import WhatWeDo from "@/components/Home/WhatWeDo";
 import WhyWeAreBetter from "@/components/Home/WhyWeAreBetter";
 import HowItWorks from "@/components/Home/HowItWorks";
+import HomePageAnimation from "@/Animations/HomeAnimation/HomePageAnimation";
 export default function Home() {
   return (
     <>
@@ -15,7 +15,7 @@ export default function Home() {
         <WhyWeAreBetter />
         <WhyUs />
       </div>
-      <HomeAnimation />
+      <HomePageAnimation/>
     </>
   );
 }

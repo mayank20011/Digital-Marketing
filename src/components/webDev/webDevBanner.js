@@ -29,6 +29,7 @@ export default function WebDevBanner() {
           className={""}
           height={650}
           width={900}
+          priority
         />
       </div>
     </div>

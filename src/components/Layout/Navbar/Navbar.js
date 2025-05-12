@@ -4,6 +4,7 @@ import MobileActiveLink from "./MobileActiveLink";
 import { navbarServicesData } from "@/Data/homeData";
 import ServicesTab from "./ServicesTab";
 import NavbarDom from "./NavbarDom";
+import MobileNavAnimation from "@/Animations/Navbar/MobileNav";
 export default async function Navbar() {
   return (
     <>
@@ -39,21 +40,77 @@ export default async function Navbar() {
           <img
             src="/navbarBars.png"
             alt=""
-            className="w-[40px] h-[40px] self-center md:hidden openNav"
+            className="w-[40px] h-[40px] self-center md:hidden hamBurger cursor-pointer"
           />
 
-          <div className="fixed max-w-[400px] w-4/5 sm:w-1/2 bg-white top-0 right-0 min-h-screen opacity-95 flex flex-col gap-2 md:hidden translate-x-full mobileNav z-50 overflow-x-hidden p-6">
+          <div className="fixed max-w-[400px] w-4/5 sm:w-1/2 bg-white top-0 right-0 h-screen flex flex-col gap-2 md:hidden mobileNav z-50 overflow-x-hidden overflow-y-auto p-6 mobileNav opacity-95 translate-x-full transition duration-700">
             <img
               src="/close.png"
               alt="X Logo"
-              width={40}
-              height={40}
-              className="self-end hover:scale-90 transition closeNav scale-0 opacity-0"
+              width={30}
+              height={30}
+              className="self-end hover:scale-90 transition closeMobileNav cursor-pointer pb-6"
             />
             <MobileActiveLink href={"/"}>Home</MobileActiveLink>
             <MobileActiveLink href={"/about-us"}>About Us</MobileActiveLink>
             <MobileActiveLink href={"/contact-us"}>Contact Us</MobileActiveLink>
             <MobileActiveLink href={"/services"}>Services</MobileActiveLink>
+            <div className="flex">
+              <div className=" pl-2 border border-neutral-500 border-dashed border-l-0 border-t-0 border-b-0"></div>
+              <div className="flex flex-col gap-2 w-full">
+                <div className="w-full flex justify-center items-center">
+                  <span className="border-t w-[20px] border-dashed"></span>
+                  <MobileActiveLink
+                    href={"/business-development"}
+                    className={"grow"}
+                  >
+                    Business Development
+                  </MobileActiveLink>
+                </div>
+                <div className="w-full flex justify-center items-center">
+                  <span className="border-t w-[20px] border-dashed"></span>
+                  <MobileActiveLink
+                    href={"/digital-marketing"}
+                    className={"grow"}
+                  >
+                    Digital Marketing
+                  </MobileActiveLink>
+                </div>
+                <div className="w-full flex justify-center items-center">
+                  <span className="border-t w-[20px] border-dashed"></span>
+                  <MobileActiveLink href={"/seo"} className={"grow"}>
+                    SEO
+                  </MobileActiveLink>
+                </div>
+                <div className="w-full flex justify-center items-center">
+                  <span className="border-t w-[20px] border-dashed"></span>
+                  <MobileActiveLink
+                    href={"/content-marketing"}
+                    className={"grow"}
+                  >
+                    Content Marketing
+                  </MobileActiveLink>
+                </div>
+                <div className="w-full flex justify-center items-center">
+                  <span className="border-t w-[20px] border-dashed"></span>
+                  <MobileActiveLink
+                    href={"/performance-marketing"}
+                    className={"grow"}
+                  >
+                    Performance Marketing
+                  </MobileActiveLink>
+                </div>
+                <div className="w-full flex justify-center items-center">
+                  <span className="border-t w-[20px] border-dashed"></span>
+                  <MobileActiveLink
+                    href={"/web-development"}
+                    className={"grow"}
+                  >
+                    Web Development
+                  </MobileActiveLink>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -66,6 +123,7 @@ export default async function Navbar() {
         </div>
       </nav>
       <NavbarDom />
+      <MobileNavAnimation />
     </>
   );
 }
