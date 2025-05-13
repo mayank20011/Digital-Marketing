@@ -31,14 +31,12 @@ const MobileNavAnimation = () => {
         {
           autoAlpha:0,
           x: "100%",
-          scale:0,
         },
         {
           x: 0,
           autoAlpha:1,
           stagger: 0.1,
           ease:"none",
-          scale:1,
         }
       );
 
