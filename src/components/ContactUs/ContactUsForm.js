@@ -48,12 +48,12 @@ export default function ContactUsForm() {
     });
   }, []);
   return (
-    <div className="flex flex-col gap-4 md:gap-6 lg:gap-8 xl:gap-12">
-      <h1 className="custom-container text-xl sm:text-2xl md:text-3xl lg:text-4xl lg:text-center font-bold">
+    <div className="flex flex-col gap-4 md:gap-6 lg:gap-8 xl:gap-12 letsConnect">
+      <h1 className="custom-container text-xl sm:text-2xl md:text-3xl lg:text-4xl lg:text-center font-bold relative letsConnectH">
         Let&apos; Connect!!
       </h1>
       <div className="custom-container flex flex-col gap-6 lg:flex-row">
-        <form className="w-full lg:w-1/2 flex flex-col gap-4 md:gap-8 p-6 md:p-12 bg-slate-100 shadow-xl rounded-sm sm:rounded-xl order-2 lg:order-1">
+        <form className="w-full lg:w-1/2 flex flex-col gap-4 md:gap-8 p-6 md:p-12 bg-slate-100 shadow-xl rounded-sm sm:rounded-xl order-2 lg:order-1 relative contactUsForm">
           <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold">
             Free Consultation
           </h1>
@@ -119,14 +119,14 @@ export default function ContactUsForm() {
           </button>
         </form>
         <div className="lg:flex w-full lg:w-1/2 justify-center flex order-1 lg:order-2">
-          <div className="flex flex-col gap-4 md:gap-6">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-orange-300 drop-shadow-[1px_1px_1px_black]">
+          <div className="flex flex-col gap-4 md:gap-6 getInTouch">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-orange-300 drop-shadow-[1px_1px_1px_black] relative getInTouchH">
               {formData.heading}
             </h2>
-            <p className="text-neutral-500 text-sm sm:text-base md:text-lg">{formData.pera}</p>
+            <p className="text-neutral-500 text-sm sm:text-base md:text-lg relative getInTouchP">{formData.pera}</p>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d876.9060069969569!2d77.0526666168336!3d28.46074795220142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1900479e7709%3A0x4866e14afb28e0a6!2sVardaan%20Farms!5e0!3m2!1sen!2sin!4v1746776109499!5m2!1sen!2sin"
-              className="w-full h-full aspect-square lg:aspect-auto"
+              className="w-full h-full aspect-square lg:aspect-auto relative getInTouchIframe"
               loading="lazy"
             ></iframe>
           </div>
