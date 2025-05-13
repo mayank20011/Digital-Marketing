@@ -59,7 +59,9 @@ const HomePageAnimation = () => {
           trigger: ".hiwDiv2",
           scroller: "body",
           start: "top 80%",
-          end: ()=>{return window.innerWidth < 500 ? "top -130%":"top 20%" },
+          end: () => {
+            return window.innerWidth < 500 ? "top -130%" : "top 20%";
+          },
           scrub: 3,
         },
       });
@@ -90,7 +92,9 @@ const HomePageAnimation = () => {
           trigger: ".hiwDiv3",
           scroller: "body",
           start: "top 80%",
-          end: ()=>{ return window.innerWidth < 500 ? "top -150%":"top 20%"},
+          end: () => {
+            return window.innerWidth < 500 ? "top -150%" : "top 20%";
+          },
           scrub: 3,
         },
       });
@@ -135,13 +139,19 @@ const HomePageAnimation = () => {
 
       // what we do animation
       const whatWeDo = gsap.timeline({
-        scrollTrigger:{
-           trigger:".whatWeDoCardDiv",
-           start:"top 80%",
-           end:()=>{ return window.innerWidth <500 ? "top -130%" : window.innerWidth< 768 ? "top -140%" : "top 20%"},
-           scrub:"5",
-           scroller:"body",
-        }
+        scrollTrigger: {
+          trigger: ".whatWeDoCardDiv",
+          start: "top 80%",
+          end: () => {
+            return window.innerWidth < 500
+              ? "top -130%"
+              : window.innerWidth < 768
+              ? "top -140%"
+              : "top 20%";
+          },
+          scrub: "5",
+          scroller: "body",
+        },
       });
       whatWeDo
         .fromTo(
@@ -152,13 +162,54 @@ const HomePageAnimation = () => {
         .fromTo(
           ".whatWeDoCardL",
           { x: -400, autoAlpha: 0 },
-          { x: 0, autoAlpha: 1, stagger:0.5 },0
+          { x: 0, autoAlpha: 1, stagger: 0.5 },
+          0
         )
         .fromTo(
           ".whatWeDoCardR",
           { x: 400, autoAlpha: 0 },
-          { x: 0, autoAlpha: 1, stagger:0.5 },0
+          { x: 0, autoAlpha: 1, stagger: 0.5 },
+          0
         );
+
+      // why we are better animation
+      //   const whyWeAreBetter = gsap.timeline({
+      //     scrollTrigger: {
+      //       trigger: ".whyWeAreBetter",
+      //       scroller: "body",
+      //       scrub: "3",
+      //       start: "top 70%",
+      //       end: "top 110%",
+      //       markers:true,
+      //     },
+      //   });
+      //   whyWeAreBetter
+      //     .fromTo(".whyWeAreBetterH", { autoAlpha: 0, y:120 }, {autoAlpha:1, y:0})
+      //     .fromTo(".whyWeAreBetterP", { autoAlpha:0, y:120}, {autoAlpha:1, y:0})
+      //     .fromTo(".whyWeAreBetterDiv", {autoAlpha:0}, {autoAlpha:1});
+
+      const whyUsTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".whyUsDiv",
+          start: "top 60%",
+          end: "top 0",
+          scrub: "1",
+          scroller: "body",
+        },
+      });
+
+      whyUsTl
+        .fromTo(
+          ".whyUsH",
+          { y: 120, scale: 0, autoAlpha: 0 },
+          { y: 0, scale: 1, autoAlpha: 1 }
+        )
+        .fromTo(
+          ".whyUsLeft",
+          { scale: 0, autoAlpha: 0 },
+          { scale: 1, autoAlpha: 1 }
+        )
+        .fromTo(".whyUsSwiper", { scale: 0, y: 100 }, { scale: 1, y: 0 });
     });
 
     return () => {

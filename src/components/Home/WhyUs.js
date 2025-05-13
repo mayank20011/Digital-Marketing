@@ -5,14 +5,14 @@ import Link from "next/link";
 export default function WhyUs() {
   return (
     <>
-      <div className="custom-container flex flex-col gap-12">
+      <div className="custom-container flex flex-col gap-12 whyUsDiv">
         <div className="flex justify-center gap-12 flex-col items-center">
-          <h1 className="text-3xl sm:text-4xl font-bold text-center w-full lg:w-3/4">
+          <h1 className="text-3xl sm:text-4xl font-bold text-center w-full lg:w-3/4 whyUsH relative">
             Success Stories How Feedback Drives Our Results
           </h1>
 
           <div className="flex flex-col lg:flex-row gap-6 md:gap-12 w-full items-center">
-            <div className="flex flex-col gap-6 p-4 md:p-6 w-full xl:w-4/10 bg-black text-white rounded-2xl h-fit">
+            <div className="flex flex-col gap-6 p-4 md:p-6 w-full xl:w-4/10 bg-black text-white rounded-2xl h-fit whyUsLeft relative">
               <h1 className="text-xl text-center">
                 What Do Our Clients Say About Us?
               </h1>
@@ -28,7 +28,7 @@ export default function WhyUs() {
                 Contact us
               </Link>
             </div>
-            <div className="w-full xl:w-6/10 overflow-hidden">
+            <div className="w-full xl:w-6/10 overflow-hidden whyUsSwiper relative">
             <ReviewSwiper/>
             </div>
           </div>

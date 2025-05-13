@@ -21,22 +21,22 @@ const MobileNavAnimation = () => {
         {
           x: "0",
           autoAlpha: "1",
-          ease:"none",
-          duration:"0.2"
+          ease: "none",
+          duration: "0.2",
         }
       );
 
       tl.fromTo(
         mobileNavLink,
         {
-          autoAlpha:0,
+          autoAlpha: 0,
           x: "100%",
         },
         {
           x: 0,
-          autoAlpha:1,
+          autoAlpha: 1,
           stagger: 0.1,
-          ease:"none",
+          ease: "none",
         }
       );
 
@@ -49,6 +49,11 @@ const MobileNavAnimation = () => {
         tl.reverse();
       });
 
+      mobileNavLink.forEach((link) => {
+        link.addEventListener("click", () => {
+          tl.reverse();
+        });
+      });
     });
 
     return () => {
