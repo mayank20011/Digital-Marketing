@@ -16,11 +16,11 @@ const MobileNavAnimation = () => {
         mobileNav,
         {
           x: "100%",
-          opacity: 0,
+          autoAlpha: 0,
         },
         {
           x: "0",
-          opacity: "1",
+          autoAlpha: "1",
           ease:"none",
           duration:"0.2"
         }
@@ -29,13 +29,13 @@ const MobileNavAnimation = () => {
       tl.fromTo(
         mobileNavLink,
         {
-          opacity:0,
-          x: 30,
-          scale:0.8,
+          autoAlpha:0,
+          x: "100%",
+          scale:0,
         },
         {
           x: 0,
-          opacity:1,
+          autoAlpha:1,
           stagger: 0.1,
           ease:"none",
           scale:1,

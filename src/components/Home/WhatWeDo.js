@@ -3,12 +3,12 @@ import Link from "next/link";
 export default function WhatWeDo() {
   return (
     <div className="custom-container flex flex-col gap-6 md:gap-12">
-      <h2 className="text-4xl text-center font-bold">What We do ?</h2>
-      <div className="w-full grid sm:grid-cols-2 gap-6">
+      <h2 className="text-4xl text-center font-bold relative whatWeDoH">What We do ?</h2>
+      <div className="w-full grid sm:grid-cols-2 gap-6 whatWeDoCardDiv">
         {whatWeDo.map((data,id) => (
           <Link key={id} href={data.href}>
             <div
-              className={`h-full flex items-center gap-2 sm:gap-6 p-2 py-4 sm:p-4 rounded-2xl border-2 border-b-8 border-black hover:scale-102 transition flex-row sm:flex-col lg:flex-row cursor-pointer ${
+              className={`h-full flex items-center gap-2 sm:gap-6 p-2 py-4 sm:p-4 rounded-2xl border-2 border-b-8 border-black hover:scale-102 transition flex-row sm:flex-col lg:flex-row cursor-pointer ${(id+1)%2 ==0 ? "whatWeDoCardR" : "whatWeDoCardL"} ${
                 data.bg == "black"
                   ? "bg-black text-white border-slate-200"
                   : "bg-white text-black"

@@ -49,7 +49,7 @@ export default function HowItWorks() {
               {HowItWorksData.about.pera}
             </p>
             <div className="border p-4 rounded-2xl border-slate-200 flex flex-col sm:flex-row">
-              <div className="p-4 flex flex-col sm:text-center gap-4 bg-slate-100 rounded-xl w-full sm:w-1/2">
+              <div className="p-4 flex flex-col sm:text-center gap-4 bg-slate-100 rounded-xl w-full sm:w-1/2 order-2 sm:order-1">
                 <h1 className="text-xl font-bold relative">
                   {HowItWorksData.about.cardl.heading}
                 </h1>
@@ -63,7 +63,7 @@ export default function HowItWorks() {
                   Lets Connect
                 </Link>
               </div>
-              <div className="flex flex-col gap-2 p-4 w-full sm:w-1/2 items-center justify-center text-md sm:text-md">
+              <div className="flex flex-col gap-2 p-4 w-full sm:w-1/2 items-center justify-center text-md sm:text-md order-1 sm:order-2">
                 {HowItWorksData.about.cardR.points.map((data) => (
                   <span className="flex gap-2 w-full sm:w-auto" key={data}>
                     <Image
@@ -71,6 +71,7 @@ export default function HowItWorks() {
                       alt="Arrow Up Right"
                       width={24}
                       height={24}
+                      className="h-fit aspect-square"
                     />
                     <p className="relative">{data}</p>
                   </span>
@@ -80,7 +81,7 @@ export default function HowItWorks() {
           </div>
         </div>
         <div className="flex gap-12 items-center justify-center flex-col lg:flex-row">
-          <div className="w-full flex flex-col gap-6 lg:w-3/5">
+          <div className="w-full flex flex-col gap-6 lg:w-3/5 hiwDiv3">
             <h1 className="text-3xl font-bold rocketh">
               {HowItWorksData.strategy.left.heading}
             </h1>
@@ -114,17 +115,17 @@ export default function HowItWorks() {
               <Image
                 src={HowItWorksData.strategy.right.img.src}
                 alt={HowItWorksData.strategy.right.img.alt}
-                className="w-full"
+                className="w-full rocketImg"
                 width={300}
                 height={300}
               />
             </div>
             <div className="px-4 gap-2 sm:gap-4 flex  w-full">
-              <div className="w-1/2 bg-white p-2 sm:p-4 rounded-xl flex flex-col gap-4 border">
+              <div className="w-1/2 bg-white p-2 sm:p-4 rounded-xl flex flex-col gap-4 border rocketImgLeftDiv">
                <h1 className="text-center font-semibold">Current Clients</h1>
                 <p className="text-3xl sm:text-4xl md:text-5xl items-center text-center flex mx-auto font-bold grow">300<span className="text-4xl text-orange-600">+</span></p>
               </div>
-              <div className="w-1/2 bg-white p-2 sm:p-4 rounded-xl flex flex-col gap-2 sm:gap-4 border">
+              <div className="w-1/2 bg-white p-2 sm:p-4 rounded-xl flex flex-col gap-2 sm:gap-4 border rocketImgRightDiv">
                <h1 className="text-center font-semibold">On Time Delivery</h1> 
                <p className="text-3xl sm:text-4xl md:text-5xl items-center text-center flex mx-auto font-bold grow">95<span className="text-4xl text-orange-600">%</span></p>
               </div>
