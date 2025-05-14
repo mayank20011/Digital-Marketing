@@ -193,23 +193,26 @@ const HomePageAnimation = () => {
           trigger: ".whyUsDiv",
           start: "top 60%",
           end: "top 0",
-          scrub: "1",
+          scrub: "5",
           scroller: "body",
         },
       });
 
       whyUsTl
-        .fromTo(
-          ".whyUsH",
-          { y: 120, scale: 0, autoAlpha: 0 },
-          { y: 0, scale: 1, autoAlpha: 1 }
-        )
+        .fromTo(".whyUsH", { x: 500, autoAlpha: 0 }, { x: 0, autoAlpha: 1 })
         .fromTo(
           ".whyUsLeft",
-          { scale: 0, autoAlpha: 0 },
-          { scale: 1, autoAlpha: 1 }
+          { x: -500, autoAlpha: 0 },
+          { x: 0, autoAlpha: 1 },
+          0
         )
-        .fromTo(".whyUsSwiper", { scale: 0, y: 100 }, { scale: 1, y: 0 });
+        .fromTo(
+          ".whyUsSwiper",
+          { y: 300, autoAlpha: 0 },
+          { y: 0, autoAlpha: 1 },
+          0
+        )
+        .fromTo([".whyUsLeft h1",".whyUsLeft p",".whyUsLeftLink"], { y: 500 , autoAlpha: 0 }, { y:0, autoAlpha:1, stagger:0.5},0);
     });
 
     return () => {

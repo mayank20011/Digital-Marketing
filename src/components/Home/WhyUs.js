@@ -12,18 +12,18 @@ export default function WhyUs() {
           </h1>
 
           <div className="flex flex-col lg:flex-row gap-6 md:gap-12 w-full items-center">
-            <div className="flex flex-col gap-6 p-4 md:p-6 w-full xl:w-4/10 bg-black text-white rounded-2xl h-fit whyUsLeft relative">
-              <h1 className="text-xl text-center">
+            <div className="flex flex-col gap-6 p-4 md:p-6 w-full xl:w-4/10 bg-black text-white rounded-2xl h-fit whyUsLeft relative overflow-y-hidden">
+              <h1 className="text-xl text-center relative">
                 What Do Our Clients Say About Us?
               </h1>
-              <p className="text-center">
+              <p className="text-center relative">
                 We understand Your brand, deliver creative solutions, and truly
                 care about results. Our expertise and responsiveness make Us
                 a trusted partner in growing your business.
               </p>
               <Link
                 href={"/"}
-                className="bg-orange-300 text-lg w-fit px-4 py-2 rounded-lg mx-auto"
+                className="bg-orange-300 text-lg w-fit px-4 py-2 rounded-lg mx-auto relative whyUsLeftLink"
               >
                 Contact us
               </Link>
