@@ -13,7 +13,7 @@ export default function AboutUsTopBanner() {
         priority
       />
       <div className="w-full h-full p-12 absolute text-center flex flex-col gap-6 bg-[rgba(255,255,255,0.4)] backdrop-blur-xs items-center justify-center">
-        <div className="w-full md:w-4/5 xl:w-5/10 flex flex-col gap-4 md:gap-6 lg:gap-8 xl:gap-12 aboutHero overflow-y-hidden">
+        <div className="w-full md:w-4/5 xl:w-5/10 flex flex-col gap-4 md:gap-6 lg:gap-8 xl:gap-12 aboutHero sm:overflow-y-hidden">
           <h1
             className="text-2xl md:text-4xl xl:text-5xl font-bold text-neutral-100 aboutHeroH relative opacity-0"
             style={{ filter: "drop-shadow(1px 1px 1px black)" }}

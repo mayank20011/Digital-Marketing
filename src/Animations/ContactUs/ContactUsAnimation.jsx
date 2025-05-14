@@ -49,7 +49,7 @@ const ContactUsAnimation = () => {
         scrollTrigger: {
           trigger: ".letsConnect",
           start: "top 70%",
-          end: ()=>{ return window.innerWidth > 1024 ? "top 20%" : window.innerWidth > 768 ? "top -70% " : "top -80%"},
+          end: ()=>{ return window.innerWidth > 1024 ? "top 20%" : window.innerWidth > 768 ? "top -40% " : "top -50%"},
           scrub:3,
         },
       });
