@@ -1,13 +1,13 @@
 import Image from "next/image";
 export default function BusinessDevelopmentStrategies() {
   return (
-    <div className="custom-container flex flex-col gap-6 md:gap-12">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center">
+    <div className="custom-container flex flex-col gap-6 md:gap-12 brandGrowth">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center relative brandGrowthH">
         Strategic Steps to Elevate and Sustain Your Digital Brand Growth
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full md:w-9/10 lg:w-4/5 mx-auto">
         <div className="flex flex-col gap-4 text-white">
-          <div className="p-6 rounded-2xl bg-black flex flex-col gap-6 hover:shadow-[3px_3px_3px_black] hover:bg-white hover:text-black transition duration-1000 grow">
+          <div className="p-6 rounded-2xl bg-black flex flex-col gap-6 hover:shadow-[3px_3px_3px_black] hover:bg-white hover:text-black transition duration-1000 grow bgCard1 relative">
             <span className="text-4xl font-bold bg-gradient-to-r from-orange-300 to-pink-600 bg-clip-text text-transparent">01</span>
             <h5 className="text-xl md:text-2xl lg:text-3xl">
               Define Clear Marketing Goals
@@ -18,7 +18,7 @@ export default function BusinessDevelopmentStrategies() {
               strategy.
             </p>
           </div>
-          <div className="p-6 rounded-2xl bg-black flex flex-col gap-6 hover:shadow-[3px_3px_3px_black] hover:bg-white hover:text-black transition duration-1000 grow">
+          <div className="p-6 rounded-2xl bg-black flex flex-col gap-6 hover:shadow-[3px_3px_3px_black] hover:bg-white hover:text-black transition duration-1000 grow bgCard2 relative">
           <span className="text-4xl font-bold bg-gradient-to-r from-orange-300 to-pink-600 bg-clip-text text-transparent">02</span>
             <h5 className="text-xl md:text-2xl lg:text-3xl">
               Identify Your Target Audience
@@ -30,7 +30,7 @@ export default function BusinessDevelopmentStrategies() {
             </p>
           </div>
         </div>
-        <div className="bg-white flex flex-col gap-6 p-6 rounded-2xl text-black hover:shadow-[5px_5px_3px_white] hover:bg-black hover:text-white transition duration-1000">
+        <div className="bg-white flex flex-col gap-6 p-6 rounded-2xl text-black hover:shadow-[5px_5px_3px_white] hover:bg-black hover:text-white transition duration-1000 bgCard3 relative">
           <div className="flex flex-col gap-12 grow">
           <span className="text-4xl font-bold bg-gradient-to-r from-orange-300 to-pink-600 bg-clip-text text-transparent">03</span>
             <h5 className="text-xl md:text-2xl lg:text-3xl">Build Online Presence</h5>
@@ -51,7 +51,7 @@ export default function BusinessDevelopmentStrategies() {
           </div>
         </div>
         <div className="flex flex-col gap-4 text-white">
-          <div className="p-6 rounded-2xl bg-black flex flex-col gap-6 grow hover:shadow-[3px_3px_3px_black] hover:bg-white hover:text-black transition duration-1000">
+          <div className="p-6 rounded-2xl bg-black flex flex-col gap-6 grow hover:shadow-[3px_3px_3px_black] hover:bg-white hover:text-black transition bgCard4 duration-1000 relative">
           <h6 className="text-4xl font-bold bg-gradient-to-r from-orange-300 to-pink-600 bg-clip-text text-transparent">04</h6>
             <h5 className="text-xl md:text-2xl lg:text-3xl">Execute Smart Campaigns</h5>
             <p className="text-lg md:hidden">
@@ -59,7 +59,7 @@ export default function BusinessDevelopmentStrategies() {
               drive real engagement, conversions, and long-term growth.
             </p>
           </div>
-          <div className="p-6 rounded-2xl bg-black flex flex-col gap-6 grow hover:shadow-[3px_3px_3px_black] hover:bg-white hover:text-black transition duration-1000">
+          <div className="bgCard5 p-6 rounded-2xl bg-black flex flex-col gap-6 grow hover:shadow-[3px_3px_3px_black] hover:bg-white hover:text-black transition duration-1000 relative">
           <span className="text-4xl font-bold bg-gradient-to-r from-orange-300 to-pink-600 bg-clip-text text-transparent">05</span>
             <h5 className="text-xl md:text-2xl lg:text-3xl">Analyze & optimize Results</h5>
             <p className="text-lg md:hidden">

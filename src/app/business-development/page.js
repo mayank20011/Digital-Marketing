@@ -1,3 +1,4 @@
+import BusinessDevelopmentAnimation from "@/Animations/BusinnessDevelopment/BusinessDevelopmentAnimation";
 import BusinessDevelopmentHero from "@/components/BusinessDevelopment/BusinessDevelopmentHero";
 import BusinessDevelopmentStrategies from "@/components/BusinessDevelopment/BusinessDevelopmentStrategies";
 import BusinessResearchExpert from "@/components/BusinessDevelopment/BusinessResearchExpert";
@@ -12,6 +13,7 @@ export default function BusinessDevelopment() {
       <LetUsCreate/>
       <BusinessResearchExpert/>
       <LetsTalkAboutProject/>
+      <BusinessDevelopmentAnimation/>
     </div>
   );
 }

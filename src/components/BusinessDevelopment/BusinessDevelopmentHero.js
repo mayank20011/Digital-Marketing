@@ -9,18 +9,18 @@ export default function BusinessDevelopmentHero() {
             alt={"Business Development Banner"}
             width={600}
             height={480}
-            className="w-full lg:w-9/10"
+            className="w-full lg:w-9/10 bdHeroImg opacity-0 relative"
             style={{filter:'drop-shadow(2px 2px 2px black)'}}
             priority
           />
         </div>
       </div>
-      <div className="order-1 md:order-2 md:absolute custom-container">
+      <div className="order-1 md:order-2 md:absolute custom-container businessdevelopmentHeroText">
         <div className="w-full md:w-1/2 flex flex-col gap-6">
-          <h1 className="text-4xl md:text-3xl lg:text-5xl font-bold">
+          <h1 className="text-4xl md:text-3xl lg:text-5xl font-bold relative opacity-0">
             Building Your Business, One Strategy at a Time
           </h1>
-          <p className="text-md lg:text-lg text-neuutal-500">
+          <p className="text-md lg:text-lg text-neuutal-500 relative opacity-0">
             Unlock the next stage of your business growth with smart, targeted
             strategies. At Vardaan Farms, we connect ideas, innovation, and
             execution to help brands expand faster and stronger. Let’s create
