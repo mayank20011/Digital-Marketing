@@ -2,16 +2,16 @@ import Image from "next/image";
 import { WhatWeDoAboutUsData } from "@/Data/aboutUsData";
 export default function WhatWeDoAboutUs() {
   return (
-    <div className="custom-container flex flex-col gap-6 md:gap-12">
-      <h1 className="text-left md:text-center text-2xl md:text-4xl font-bold">
+    <div className="custom-container flex flex-col gap-6 md:gap-12 aboutWhatWeDo">
+      <h1 className="text-left md:text-center text-2xl md:text-4xl font-bold aboutWhatWeDoH relative">
         {WhatWeDoAboutUsData.heading}
       </h1>
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-        <div className="flex flex-col gap-4 md:gap-6 justify-center">
+        <div className="flex flex-col gap-4 md:gap-6 justify-center relative whatWeDoLeftDiv">
           <div className="flex flex-col gap-4">
             {WhatWeDoAboutUsData.data.map((obj, id) => (
               <div className="flex flex-col gap-2" key={obj.heading}>
-                <h1 className="text-lg font-bold flex gap-2 flex-row items-center">
+                <h1 className="text-lg font-bold flex gap-2 flex-row items-center relative">
                   <span className="border px-[4px] text-sm rounded-full h-fit text-black">{`0${
                     id + 1
                   }`}</span>
@@ -24,7 +24,7 @@ export default function WhatWeDoAboutUs() {
             ))}
           </div>
         </div>
-        <div className="bg-gradient-to-r from-orange-600 to-pink-500 rounded-2xl">
+        <div className="bg-gradient-to-r from-orange-600 to-pink-500 rounded-2xl relative whatWeDoRightDiv">
           <Image
             src={"/grow-scaled-1.avif"}
             alt={"marketing png"}

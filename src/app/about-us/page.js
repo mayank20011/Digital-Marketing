@@ -4,6 +4,7 @@ import WhatWeDoAboutUs from "@/components/AboutUs/WhatWeDoAboutUs";
 import WhyChooseUs from "@/components/AboutUs/WhyChooseUs";
 import FoundersMessage from "@/components/AboutUs/FoundersMessage";
 import OurImpact from "@/components/AboutUs/OurImpact";
+import AboutUsAnimation from "@/Animations/AboutUs/AboutUsAnimation";
 
 export default function AboutUs(){
   return (
@@ -14,6 +15,7 @@ export default function AboutUs(){
       <WhyChooseUs/>
       <FoundersMessage/>
       <OurImpact/>
+      <AboutUsAnimation/>
     </div>
   );
 }

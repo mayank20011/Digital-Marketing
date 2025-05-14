@@ -50,7 +50,7 @@ const ContactUsAnimation = () => {
           trigger: ".letsConnect",
           start: "top 70%",
           end: ()=>{ return window.innerWidth > 1024 ? "top 20%" : window.innerWidth > 768 ? "top -70% " : "top -80%"},
-          scrub:5,
+          scrub:3,
         },
       });
       tl2
