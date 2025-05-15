@@ -1,3 +1,4 @@
+import SEOAnimation from "@/Animations/SEO/SEOAnimation";
 import SEOBanner from "@/components/seo/Banner/SeoBanner";
 import ElementsOfSeo from "@/components/seo/ElementsOfSeo";
 import MaximizeGrowth from "@/components/seo/MaximizeGrowth";
@@ -13,5 +14,6 @@ export default function SeoPage(){
     <MaximizeGrowth/>
     <SEOTOOLS/>
     <LetsTalkAboutProject/>
+    <SEOAnimation/>
   </div>)
 }

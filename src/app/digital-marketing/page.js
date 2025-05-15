@@ -1,3 +1,4 @@
+import DigitalMarketingAnimation from "@/Animations/DigitalMarketing/DigitalMarketingAnimation";
 import DmProof from "@/components/DigitalMarketing/DmProof";
 import FocusedDigitalMarketingStrategy from "@/components/DigitalMarketing/FocusedDmStrategy";
 import HowToChooseDm from "@/components/DigitalMarketing/HowToChooseDm";
@@ -12,6 +13,7 @@ export default function DigiTalMarketingPage() {
       <HowToChooseDm/>
       <FocusedDigitalMarketingStrategy/>
       <DmProof/>
+      <DigitalMarketingAnimation/>
     </div>
   );
 }

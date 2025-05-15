@@ -60,3 +60,44 @@ export const DmProofData = {
     ],
   },
 };
+
+export const DmSlidesCardData = [
+  {
+    heading: "SEO Excellence",
+    paragraph: "Elevate your online presence with our expert SEO strategies. We focus on optimizing your website's structure, content, and backlinks to improve search engine rankings and drive organic traffic.",
+    bgColor: "bg-indigo-600",
+    textColor: "text-white"
+  },
+  {
+    heading: "Social Media Mastery",
+    paragraph: "Engage your audience effectively across platforms like Facebook, Instagram, and LinkedIn. Our tailored strategies help build brand awareness, foster community engagement, and drive conversions.",
+    bgColor: "bg-blue-500",
+    textColor: "text-white"
+  },
+  {
+    heading: "PPC Campaigns",
+    paragraph: "Maximize your ROI with targeted pay-per-click advertising campaigns. We create optimized ads for Google Ads and social media platforms to reach your ideal audience and drive quality leads.",
+    bgColor: "bg-green-500",
+    textColor: "text-white"
+  },
+  {
+    heading: "Content Marketing",
+    paragraph: "Craft compelling content that resonates with your audience. From blog posts to videos, we develop content that establishes your brand as an industry authority and drives customer engagement.",
+    bgColor: "bg-yellow-500",
+    textColor: "text-gray-800"
+  },
+  {
+    heading: "Email Marketing",
+    paragraph: "Nurture leads and maintain customer relationships through personalized email campaigns. Our strategies focus on delivering relevant content that encourages action and builds loyalty.",
+    bgColor: "bg-red-500",
+    textColor: "text-white"
+  },
+  {
+    heading: "Web Development",
+    paragraph: "Build responsive and user-friendly websites that provide seamless user experiences. We focus on creating websites that are not only visually appealing but also optimized for performance and conversions.",
+    bgColor: "bg-purple-600",
+    textColor: "text-white"
+  }
+];
+
+
