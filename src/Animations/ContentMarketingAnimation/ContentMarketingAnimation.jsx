@@ -3,6 +3,8 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const ContentMarketingAnimation = () => {
   useGSAP(() => {
     const context = gsap.context(() => {
@@ -154,7 +156,6 @@ const ContentMarketingAnimation = () => {
           { scale: 1, autoAlpha: 1, y: 0, x: 0 }
         )
         .fromTo(".powerfullContentMarketingSlides", { x: "100%" }, { x: 0 });
-
     });
 
     return () => {

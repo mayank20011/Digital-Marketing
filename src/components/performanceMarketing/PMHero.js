@@ -2,8 +2,8 @@ import { pmHeroData } from "@/Data/performanceMarketingData";
 export default function PerFormanceMarketingHeroSection() {
   return (
     <div className="flex flex-col gap-6 md:gap-12">
-      <div className="custom-container flex flex-col gap-6 md:gap-12 md:flex-row items-center justify-between">
-        <div className="order-2 md:order-1 w-full md:1/2 lg:w-3/5 flex flex-col gap-4">
+      <div className="custom-container flex flex-col gap-6 md:gap-12 md:flex-row items-center justify-between performanceMarketingHero">
+        <div className="performanceMarketingHeroText order-2 md:order-1 w-full md:1/2 lg:w-3/5 flex flex-col gap-4 opacity-0 relative">
           <h1
             className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-orange-400 to-pink-400 w-fit bg-clip-text text-transparent drop-shadow-[1px_1px_1px_black]`}
           >
@@ -16,8 +16,8 @@ export default function PerFormanceMarketingHeroSection() {
             {pmHeroData.span}
           </span>
         </div>
-        <div className="order-1 md:order-2 w-full md:1/2 lg:w-2/5 grid grid-cols-2 gap-4">
-          <div className="flex flex-col gap-4 mt-12">
+        <div className="performanceMarketingHeroCards order-1 md:order-2 w-full md:1/2 lg:w-2/5 grid grid-cols-2 gap-4 relative opacity-0 overflow-y-hidden">
+          <div className="flex flex-col gap-4 mt-12 heroCardContainerLeft relative">
             {pmHeroData.cards.map((card, id) =>
               (id + 1) % 2 == 0 ? (
                 <div
@@ -40,7 +40,7 @@ export default function PerFormanceMarketingHeroSection() {
               ) : null
             )}
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 heroCardContainerRight relative">
             {pmHeroData.cards.map((card, id) =>
               (id + 1) % 2 != 0 ? (
                 <div
@@ -65,18 +65,18 @@ export default function PerFormanceMarketingHeroSection() {
           </div>
         </div>
       </div>
-      <div className="custom-container">
+      <div className="custom-container quote">
         <div className="flex gap-4 md:w-3/4 mx-auto">
-          <p className="text-[60px] font-bold h-[60px] -mt-[30px] text-transparent bg-gradient-to-tr from-orange-300 to-pink-400 bg-clip-text">
+          <p className="text-[60px] font-bold h-[60px] -mt-[30px] text-transparent bg-gradient-to-tr from-orange-300 to-pink-400 bg-clip-text relative">
             &quot;
           </p>
           <div className="flex flex-col gap-4">
-            <p className="text-2xl md:text-3xl">
+            <p className="text-2xl md:text-3xl relative">
               I don&apos;t believe in wasting ad spend. Every rupee should bring you
               closer to real business growth—that&apos;s the mindset we apply to
               every campaign we run.
             </p>
-            <p className="text-xl md:text-2xl text-right text-transparent w-fit bg-gradient-to-tr from-orange-400 to-pink-400 font-bold bg-clip-text drop-shadow-[1px_1px_1px_black] self-end">-Ashish Bhadoria</p>
+            <p className="text-xl md:text-2xl text-right text-transparent w-fit bg-gradient-to-tr from-orange-400 to-pink-400 font-bold bg-clip-text drop-shadow-[1px_1px_1px_black] self-end relative">-Ashish Bhadoria</p>
           </div>
         </div>
       </div>
