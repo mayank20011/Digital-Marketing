@@ -5,7 +5,7 @@ export default function WebDevProcessCard() {
       {webDevProcessCardsData.map((obj, id) => (
         <div
           key={id}
-          className={`relative flex flex-col gap-6 w-full lg:w-3/4 border p-4 md:p-12 rounded-lg text-white bg-gradient-to-br ${
+          className={`relative flex flex-col gap-4 w-full lg:w-3/4  p-4 md:p-6 rounded-lg text-white bg-gradient-to-br ${
             (id + 1) % 2 == 0
               ? "from-pink-600 to-orange-300"
               : "from-orange-300 to-pink-600"

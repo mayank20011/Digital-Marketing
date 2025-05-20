@@ -4,7 +4,7 @@ import WhenCards from "./subComponents/WhenCards";
 export default function WhenWebDev() {
   return (
     <div className="custom-container flex flex-col gap-24 ">
-      <div className="flex flex-col gap-8 md:gap-12">
+      <div className="flex flex-col gap-8 md:gap-12 whenWebDev">
         <div className="flex flex-col gap-2">
           <span>WHEN</span>
           <h1 className="text-2xl sm:text-4xl xl:text-5xl font-bold">

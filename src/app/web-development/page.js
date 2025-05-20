@@ -1,3 +1,4 @@
+import WebDevelopmentAnimation from "@/Animations/WebDevelopmentAnimation/WebDevelopmentAnimation";
 import LetsTalkAboutProject from "@/components/webDev/LetsTalkAboutProject";
 import OurAproach from "@/components/webDev/OurAproach";
 import TechStack from "@/components/webDev/TechStack";
@@ -12,6 +13,7 @@ export default function WebDevelopmentPage() {
       <OurAproach />
       <TechStack />
       <LetsTalkAboutProject/>
+      <WebDevelopmentAnimation/>
     </div>
   );
 }
