@@ -137,11 +137,7 @@ const SEOAnimation = () => {
           scroller: "body",
           start: "top 80%",
           end: () => {
-            return window.innerWidth < 768
-              ? "top 20%"
-              : window.innerWidth < 1024
-              ? "top 40%"
-              : "top 30%";
+            return "top 50%";
           },
           scrub: 2,
         },
@@ -153,35 +149,26 @@ const SEOAnimation = () => {
         { y: 0, autoAlpha: 1, stagger: 0.2 }
       );
 
-      // const leftDivtl = gsap.timeline({
-      //   scrollTrigger: {
-      //     trigger: ".toolsParentContainer",
-      //     scroller: "body",
-      //     start: "top 80%",
-      //     markers: true,
-      //     end: () => {
-      //       return window.innerWidth < 768
-      //         ? "top 0%"
-      //         : window.innerWidth < 1024
-      //         ? "top 40%"
-      //         : "top -150%";
-      //     },
-      //     scrub: 2,
-      //   },
-      // });
-      // leftDivtl.fromTo(
-      //   [".leftDiv img", ".leftDiv h1", ".leftDiv p"],
-      //   { x: 200, autoAlpha: 0 },
-      //   { x: 0, autoAlpha: 1 }
-      // );
-      // const rightDivtl = gsap.timeline({});
-      // rightDivtl.fromTo(
-      //   [".rightDiv img", ".rightDiv h1", ".rightDiv p"],
-      //   { x: -200, autoAlpha: 0 },
-      //   { x: 0, autoAlpha: 1, stagger: 0.2 },
-      //   0
-      // );
-      // context end here
+      // timeline for seo tools
+
+      const dataDivParent = document.querySelectorAll(".dataDivParent");
+
+      dataDivParent.forEach((ddprnt) => {
+        const seoToolsDivTl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ddprnt,
+            scroller: "body",
+            start: "top 80%",
+            end: "top 70%",
+            scrub: 2,
+          },
+        });
+        seoToolsDivTl.fromTo(
+          ddprnt.querySelectorAll(".dataDiv img, .dataDiv h1, .dataDiv p"),
+          { autoAlpha: 0, y: 300, scale: 0 },
+          { autoAlpha: 1, y: 0, scale: 1, stagger:0.2 }
+        );
+      });
     });
 
     return () => {

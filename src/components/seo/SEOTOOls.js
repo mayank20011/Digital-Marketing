@@ -8,17 +8,17 @@ export default function SEOTOOLS() {
           {Data.heading}
         </h1>
         <p className="text-md md:text-xl relative seoToolsP">{Data.pera}</p>
-        <div className="flex flex-col toolsParentContainer">
+        <div className="flex flex-col toolsParentContainer pt-4 md:pt-0">
           {Data.cards.map((obj, id) => (
             <div
-              className={`flex justify-between w-1/2 border-dashed relative ${
+              className={`flex justify-between w-1/2 border-dashed relative borderDiv ${
                 (id + 1) % 2 == 0 ? "self-start border-r border-orange-300" : " border-l self-end border-pink-300"
               } `}
               key={id}
             >
-              <div className="w-full flex flex-col">
+              <div className="w-full flex flex-col dataDivParent">
                 <div
-                  className={`flex flex-col gap-4 md:gap-6 p-4 rounded-4xl  sm:w-4/5 text-left ${
+                  className={`dataDiv flex flex-col gap-4 md:gap-6 p-4 rounded-4xl  sm:w-4/5 text-left ${
                     (id + 1) % 2 == 0 ? " rightDiv" : "self-end leftDiv"
                   }`}
                 >

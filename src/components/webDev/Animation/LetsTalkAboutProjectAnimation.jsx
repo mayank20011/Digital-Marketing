@@ -11,23 +11,20 @@ const LetsTalkAboutProjectAnimation = () => {
         scrollTrigger: {
           trigger: ".letsTalkAboutProject",
           scroller: "body",
-          scrub: true,
-          start:"top 70%",
-          end:"top 50%"
+          scrub: 2,
+          start: "top 70%",
+          end: "top 50%",
         },
       });
       tl.fromTo(
-        ".letsTalkAboutProject h1",
-        { y: 200, autoAlpha: 0 },
-        { y: 0, autoAlpha: 1 }
-      )
-        .fromTo(
+        [
+          ".letsTalkAboutProject h1",
           ".letsTalkAboutProject a",
-          { y: -200, autoAlpha: 0 },
-          { y: 0, autoAlpha: 1 },
-          0
-        )
-        .fromTo(".letsTalkAboutProject p", { scale: 0.7 }, { scale: 1 });
+          ".letsTalkAboutProject p",
+        ],
+        { y: 100, autoAlpha: 0, scale: 0 },
+        { y: 0, autoAlpha: 1, scale: 1, stagger:0.2}
+      );
     });
 
     return () => {

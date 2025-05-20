@@ -1,3 +1,4 @@
+import ContentMarketingAnimation from "@/Animations/ContentMarketingAnimation/ContentMarketingAnimation";
 import ContentmarketingBanner from "@/components/ContentMarketing/ContentmarketingBanner";
 import MarketInsights from "@/components/ContentMarketing/MarketInsights";
 import OurProcess from "@/components/ContentMarketing/OurProcess";
@@ -13,5 +14,6 @@ export default function ContentMarketingPage(){
     <WhyContentMarketing/>
     <PowerfullContentMarketing/>
     <LetsTalkAboutProject/>
+    <ContentMarketingAnimation/>
   </div>);
 }
