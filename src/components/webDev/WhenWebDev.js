@@ -3,19 +3,19 @@ import WhenCards from "./subComponents/WhenCards";
 
 export default function WhenWebDev() {
   return (
-    <div className="custom-container flex flex-col gap-24 ">
+    <div className="custom-container flex flex-col gap-24 whenWebDevContainer">
       <div className="flex flex-col gap-8 md:gap-12 whenWebDev">
         <div className="flex flex-col gap-2">
-          <span>WHEN</span>
-          <h1 className="text-2xl sm:text-4xl xl:text-5xl font-bold">
+          <span className="whenHeading relative">WHEN</span>
+          <h1 className="text-2xl sm:text-4xl xl:text-5xl font-bold whenHeading relative">
             Cases When a Company Need Web Devlopment Service
           </h1>
         </div>
         <WhenCards />
       </div>
-      <div className="">
+      <div className="webDevProcessContainer">
         <div className="flex gap-12 flex-col lg:flex-row">
-          <div className="flex flex-col gap-6 w-full lg:w-1/2 pt-12">
+          <div className="flex flex-col gap-6 w-full lg:w-1/2 pt-12 webDevProcessText relative">
             <h1 className="text-2xl sm:text-4xl xl:text-5xl font-bold">
               Our Web Development Process
             </h1>

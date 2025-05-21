@@ -1,7 +1,10 @@
 import { webDevProcessCardsData } from "@/Data/webDev";
 export default function WebDevProcessCard() {
   return (
-    <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:items-center h-[500px] overflow-y-auto" style={{scrollbarWidth:"thin", scrollbarColor:"white white"}}>
+    <div
+      className="w-full lg:w-1/2 flex flex-col gap-6 lg:items-center h-[500px] overflow-y-auto webDevProcessCards relative"
+      style={{ scrollbarWidth: "thin", scrollbarColor: "white white" }}
+    >
       {webDevProcessCardsData.map((obj, id) => (
         <div
           key={id}

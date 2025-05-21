@@ -141,7 +141,6 @@ const DigitalMarketingAnimation = () => {
           trigger: ".dmProofText",
           scroller: "body",
           scrub: true,
-          markers: true,
           end: ()=>{return window.innerWidth > 768 ? "top 20%" :"top -20%"},
         },
       });

@@ -2,9 +2,9 @@ import { whenCardData } from "@/Data/webDev";
 import Image from "next/image";
 export default function WhenCards() {
   return (
-    <div className="grid gap-12 grid-cols-1 lg:grid-cols-3">
+    <div className="grid gap-12 grid-cols-1 lg:grid-cols-3 caseStudyCards">
       {whenCardData.map((obj, index) => (
-        <div key={obj.heading} className="flex flex-col gap-4">
+        <div key={obj.heading} className={`caseStudyCard-${index+1} flex flex-col gap-4`}>
           <div className="flex justify-center items-center gap-12 md:gap-36">
             <Image src={obj.img} alt={obj.alt} width={50} height={50} />
             <div className={`grow flex items-center justify-center ${index== whenCardData.length-1 ? "opacity-0" :""} `}>
