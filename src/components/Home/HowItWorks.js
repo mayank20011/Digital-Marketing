@@ -2,6 +2,7 @@ import { HowItWorksData } from "@/Data/homeData";
 import Image from "next/image";
 import HowItWorksAnimation from "./componentsAnimation/HowItWorksAnimation";
 import Link from "next/link";
+import NumberCounting from "@/Animations/CountableAnimation/NumberCounting";
 export default function HowItWorks() {
   return (
     <>
@@ -27,8 +28,12 @@ export default function HowItWorks() {
                   height={70}
                 />
               </div>
-              <h2 className="font-bold text-xl md:text-2xl lg:text-3xl ">{card.number}</h2>
-              <p className="text-xs md:text-sm sm:text-lg font-[600] text-neutral-500">{card.pera}</p>
+              <h2 className="font-bold text-xl md:text-2xl lg:text-3xl ">
+                {card.number}
+              </h2>
+              <p className="text-xs md:text-sm sm:text-lg font-[600] text-neutral-500">
+                {card.pera}
+              </p>
             </div>
           ))}
         </div>
@@ -120,19 +125,26 @@ export default function HowItWorks() {
                 height={300}
               />
             </div>
-            <div className="px-4 gap-2 sm:gap-4 flex  w-full">
+            <div className="px-4 gap-2 sm:gap-4 flex  w-full countParentDiv">
               <div className="w-1/2 bg-white p-2 sm:p-4 rounded-xl flex flex-col gap-4 border rocketImgLeftDiv">
-               <h1 className="text-center font-semibold">Current Clients</h1>
-                <p className="text-3xl sm:text-4xl md:text-5xl items-center text-center flex mx-auto font-bold grow">300<span className="text-4xl text-orange-600">+</span></p>
+                <h1 className="text-center font-semibold">Current Clients</h1>
+                <p className="text-3xl sm:text-4xl md:text-5xl items-center text-center flex mx-auto font-bold grow">
+                  <span className="countableNumber" data-val="300">000</span>
+                  <span className="text-4xl text-orange-600">+</span>
+                </p>
               </div>
               <div className="w-1/2 bg-white p-2 sm:p-4 rounded-xl flex flex-col gap-2 sm:gap-4 border rocketImgRightDiv">
-               <h1 className="text-center font-semibold">On Time Delivery</h1> 
-               <p className="text-3xl sm:text-4xl md:text-5xl items-center text-center flex mx-auto font-bold grow">95<span className="text-4xl text-orange-600">%</span></p>
+                <h1 className="text-center font-semibold">On Time Delivery</h1>
+                <p className="text-3xl sm:text-4xl md:text-5xl items-center text-center flex mx-auto font-bold grow">
+                  <span className="countableNumber" data-val="95">00</span>
+                  <span className="text-4xl text-orange-600">%</span>
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <NumberCounting classToAnimate={".countableNumber"} parentDiv={".countParentDiv"}/>
       <HowItWorksAnimation />
     </>
   );

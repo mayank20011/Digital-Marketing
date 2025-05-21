@@ -26,26 +26,11 @@ const MobileNavAnimation = () => {
         }
       );
 
-      tl.fromTo(
-        mobileNavLink,
-        {
-          autoAlpha: 0,
-          x: "100%",
-        },
-        {
-          x: 0,
-          autoAlpha: 1,
-          stagger: 0.1,
-          ease: "none",
-        }
-      );
-
       // timeline play and revert
       hamBurger.addEventListener("click", () => {
         tl.play();
       });
       closeMobileNav.addEventListener("click", () => {
-        console.log("button clicked");
         tl.reverse();
       });
 

@@ -37,7 +37,7 @@ const HomePageAnimation = () => {
           scroller: "body",
           start: "top 80%",
           end: "top 20%",
-          scrub: 3,
+          scrub: 2,
         },
       });
       const hiwh = document.querySelector(".hiwHeading");
@@ -62,7 +62,7 @@ const HomePageAnimation = () => {
           end: () => {
             return window.innerWidth < 500 ? "top -130%" : "top 20%";
           },
-          scrub: 3,
+          scrub: 2,
         },
       });
 
@@ -95,7 +95,7 @@ const HomePageAnimation = () => {
           end: () => {
             return window.innerWidth < 500 ? "top -150%" : "top 20%";
           },
-          scrub: 3,
+          scrub: 2,
         },
       });
 
@@ -149,7 +149,7 @@ const HomePageAnimation = () => {
               ? "top -140%"
               : "top 20%";
           },
-          scrub: "5",
+          scrub: 2,
           scroller: "body",
         },
       });
@@ -172,28 +172,12 @@ const HomePageAnimation = () => {
           0
         );
 
-      // why we are better animation
-      //   const whyWeAreBetter = gsap.timeline({
-      //     scrollTrigger: {
-      //       trigger: ".whyWeAreBetter",
-      //       scroller: "body",
-      //       scrub: "3",
-      //       start: "top 70%",
-      //       end: "top 110%",
-      //       markers:true,
-      //     },
-      //   });
-      //   whyWeAreBetter
-      //     .fromTo(".whyWeAreBetterH", { autoAlpha: 0, y:120 }, {autoAlpha:1, y:0})
-      //     .fromTo(".whyWeAreBetterP", { autoAlpha:0, y:120}, {autoAlpha:1, y:0})
-      //     .fromTo(".whyWeAreBetterDiv", {autoAlpha:0}, {autoAlpha:1});
-
       const whyUsTl = gsap.timeline({
         scrollTrigger: {
           trigger: ".whyUsDiv",
           start: "top 60%",
           end: "top 0",
-          scrub: "5",
+          scrub: 2,
           scroller: "body",
         },
       });
